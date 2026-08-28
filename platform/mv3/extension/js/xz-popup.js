@@ -91,7 +91,16 @@ function renderScoreCard(stats) {
 async function initScoreCard(hostname) {
     if ( typeof hostname !== 'string' || hostname === '' ) {
         // Non-http page (or no tab access): show a friendly empty state
-        // rather than hiding the card outright.
+        // rather than hiding the card outright. Also soften two upstream
+        // regions that otherwise render as blanks in this state: the
+        // hostname header (falls back to the extension name) and the
+        // filtering-mode caption (which would show a bare "-").
+        const hostSpan = qs$('#hostname > span:first-of-type');
+        if ( hostSpan !== null && hostSpan.textContent === '' ) {
+            dom.text(hostSpan, i18n$('extName'));
+        }
+        const modeText = qs$('#filteringModeText');
+        if ( modeText !== null ) { modeText.style.display = 'none'; }
         renderScoreCard({ live: false });
         return;
     }

@@ -75,8 +75,14 @@ function renderSeries(latest) {
     dom.clear(host);
     const total = latest.series.reduce((sum, day) => sum + day.blocked, 0);
     if ( latest.series.length === 0 || total === 0 ) {
-        host.append(el('p', 'xzov0efe-note',
-            i18n$('xzDigestEmpty') || 'Nothing blocked in this window yet — browse a little and check back.'));
+        const frame = el('div', 'xzov0efe-emptychart');
+        frame.append(
+            el('span', 'empty-title',
+                i18n$('xzDigestEmptySeriesTitle') || 'Nothing to chart yet'),
+            el('span', 'empty-body',
+                i18n$('xzDigestEmptySeries') || 'No blocks recorded yet — the chart fills in as you browse.'),
+        );
+        host.append(frame);
         return;
     }
     const max = Math.max(1, ...latest.series.map(a => a.blocked));
@@ -93,10 +99,9 @@ function renderSeries(latest) {
     }
 }
 
-const emptyTableRow = (table, cols) => {
+const emptyTableRow = (table, cols, key, fallback) => {
     const row = el('tr');
-    const cell = el('td', 'xzov0efe-note',
-        i18n$('xzDigestEmpty') || 'Nothing blocked in this window yet — browse a little and check back.');
+    const cell = el('td', 'xzov0efe-note', i18n$(key) || fallback);
     cell.colSpan = cols;
     row.append(cell);
     table.append(row);
@@ -110,7 +115,7 @@ function renderTrackers(latest) {
     head.append(el('th', 'numeric', i18n$('xzDigestColBlocked') || 'Blocked'));
     table.append(head);
     if ( latest.topTrackers.length === 0 ) {
-        emptyTableRow(table, 2);
+        emptyTableRow(table, 2, 'xzDigestEmptyTrackers', 'No tracker domains seen yet.');
         return;
     }
     for ( const t of latest.topTrackers ) {
@@ -131,7 +136,7 @@ function renderSites(latest) {
     head.append(el('th', 'numeric', i18n$('xzDigestColDomains') || 'Tracker domains'));
     table.append(head);
     if ( latest.topSites.length === 0 ) {
-        emptyTableRow(table, 4);
+        emptyTableRow(table, 4, 'xzDigestEmptySites', 'No per-site data yet.');
         return;
     }
     for ( const s of latest.topSites ) {

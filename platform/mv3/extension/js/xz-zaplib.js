@@ -96,15 +96,16 @@ function packCard(pack, state) {
     card.append(el('p', 'pack-desc', pack.desc));
     const actions = el('div', 'pack-actions');
     if ( pack.pro && state.pro !== true ) {
-        const upgrade = el('button', 'iconified dontshrink');
-        const icon = el('span', 'fa-icon', 'unlock-alt');
-        const label = el('span', undefined,
-            i18n$('xzZapUpgrade') || 'Unlock with Pro');
-        actions.append(upgrade);
-        upgrade.append(icon, label, el('span', 'hover'));
-        upgrade.addEventListener('click', ( ) => {
-            sendMessage({ what: 'gotoURL', url: PRO_URL, type: 'tab' });
-        });
+        // Locked Pro pack: a quiet inline affordance, not a full button —
+        // a column of identical gray buttons reads as disabled controls.
+        // The single gold action lives in the upsell row below the list.
+        const locked = el('span', 'xzov0efe-prolock');
+        locked.append(
+            el('span', 'fa-icon', 'unlock-alt'),
+            el('span', undefined,
+                i18n$('xzZapLocked') || 'Included with Pro'),
+        );
+        actions.append(locked);
     } else if ( state.applied[pack.id] !== undefined ) {
         const remove = el('button', 'iconified dontshrink');
         remove.append(
@@ -158,6 +159,26 @@ async function render() {
     const pro = data.packs.filter(p => p.pro === true);
     for ( const pack of [ ...free, ...pro ] ) {
         host.append(packCard(pack, state));
+    }
+    // One upsell row for the whole Pro section: the pane's single gold
+    // action, instead of a gray "Unlock" button repeated per pack.
+    if ( state.pro !== true && pro.length !== 0 ) {
+        const upsell = el('div', 'xzov0efe-upsell');
+        upsell.append(el('span', 'upsell-note',
+            (i18n$('xzZapUpsellNote') || '{{count}} preset packs included with Pro')
+                .replace('{{count}}', `${pro.length}`)
+        ));
+        const cta = el('button', 'xzov0efe-goldbtn iconified dontshrink');
+        cta.append(
+            el('span', 'fa-icon', 'unlock-alt'),
+            el('span', undefined, i18n$('xzZapUpgrade') || 'Unlock with Pro'),
+            el('span', 'hover'),
+        );
+        cta.addEventListener('click', ( ) => {
+            sendMessage({ what: 'gotoURL', url: PRO_URL, type: 'tab' });
+        });
+        upsell.append(cta);
+        host.append(upsell);
     }
     // Pack cards are created after the document-level icon pass ran, so
     // substitute their .fa-icon glyphs explicitly.

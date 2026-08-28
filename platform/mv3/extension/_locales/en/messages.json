@@ -522,6 +522,18 @@
   "xzDigestEmpty": {
     "message": "Nothing blocked in this window yet — browse a little and check back."
   },
+  "xzDigestEmptySeries": {
+    "message": "No blocks recorded yet — the chart fills in as you browse."
+  },
+  "xzDigestEmptySeriesTitle": {
+    "message": "Nothing to chart yet"
+  },
+  "xzDigestEmptyTrackers": {
+    "message": "No tracker domains seen yet."
+  },
+  "xzDigestEmptySites": {
+    "message": "No per-site data yet."
+  },
   "xzDigestKpiSeen": {
     "message": "Trackers seen"
   },
@@ -591,6 +603,12 @@
   "xzZapUpgrade": {
     "message": "Unlock with Pro"
   },
+  "xzZapLocked": {
+    "message": "Included with Pro"
+  },
+  "xzZapUpsellNote": {
+    "message": "{{count}} preset packs included with Pro"
+  },
   "xzZapSiteCount": {
     "message": "{{count}} sites"
   },
@@ -628,7 +646,7 @@
     "message": "You support an independent, no-analytics privacy tool"
   },
   "xzProKeyPlaceholder": {
-    "message": "ZOVO-XXXX-XXXX-XXXX-XXXX"
+    "message": "Paste your Zovo key"
   },
   "xzProApply": {
     "message": "Unlock"

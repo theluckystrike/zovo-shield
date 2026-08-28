@@ -38,7 +38,7 @@
     - The Supabase anon key below is a publishable, RLS-scoped key and
       is safe to ship; it is hardcoded inline on purpose (placeholder
       injection historically shipped unsubstituted and silently killed
-      the paid tier). Only sb_secret_/service_role keys are banned.
+      the paid tier). Privileged keys are banned fleet-wide.
 
 */
 
