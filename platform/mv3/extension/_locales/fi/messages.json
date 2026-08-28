@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "Tehokas estotyökalu, joka estää heti asennuksen jälkeen mm. mainokset, seurannat ja kryptolouhijat.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} sääntöä, muunnettu {{filterCount}} verkkosuodattimesta",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — Hallintapaneeli",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "Asetukset",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "Kehitys",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "Tietoja",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "Tietosuojakäytäntö",
@@ -103,10 +87,6 @@
     "message": "Lisättävän listan URL-osoite",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "Tuotujen listojen kosmeetisten ja scriplet‑suodattimien käyttämiseksi, on uBO Litelle myönnettävä oikeus suorittaa käyttäjäskriptejä.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "Tuonti / Vienti",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "Lisättävät kosmeettiset/scriptlet-suodattimet",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "Avaa selaimesi laajennussivu (<code>chrome://extensions</code> Chromessa, <code>about:addons</code> Firefoxissa), valitse <b>uBO Liten</b> tiedot ja aktivoi käyttöoikeus <b>Salli käyttäjäskriptit</b> tai <b>Salli vahvistamattomien kolmannen osapuolen komentosarjojen pääsy tietoihisi</b>.",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "Muutoshistoria",
@@ -187,16 +163,8 @@
     "message": "Sisältää peiteruutuja tai muita ärsykkeitä",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "Tunnistaa uBO Liten",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "Sisältää tietosuojaan liittyviä ongelmia",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "Ei toimi oikein uBO Liten ollessa käytössä",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "Vapaa suodatinluonti",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "Vapaan suodatinluonnin kosmeetisten ja scriplet‑suodattimien käyttämiseksi, on uBO Litelle myönnettävä oikeus suorittaa käyttäjäskriptejä.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "Kehittäjätila",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "Sivu estettiin",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite on estänyt seuraavan sivun latauksen:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "Sivu estettiin listalla {{listname}} olevan sännön perusteella.",

@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "საცდელი, ნებართვებისგან თავისუფალი მსუბუქი შემზღუდავი -- თავისთავად აცილებს რეკლამებს, მეთვალყურეებს, კრიპტოგამომმუშავებლებს და ა.შ.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} წესი, შედგენილი {{filterCount}} ქსელის ფილტრიდან",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — მაჩვენებლები",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "პარამეტრები",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "შემუშავება",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "შესახებ",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "პირადულობის დებულება",
@@ -103,10 +87,6 @@
     "message": "ჩასვით სიის ბმული დასამატებლად",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "გარეგნული ან სკრიპტული ფილტრების იძულებით ამოქმედებისთვის შემოტანილი სიებიდან, uBO Lite საჭიროებს მომხმარებლის სკრიპტების გაშვების ნებართვებს.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "შემოტანა / გატანა",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "აქ ჩასვით გარეგნული ნაწილების ცალკეული ფილტრები დასამატებლად",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "გარეგნული ან მცირე სკრიპტის ფილტრების იძულებით ასამოქმედებლად შემოტანილი სიებიდან, uBO Lite უნდა იყოს სკრიპტების გაშვების ნებართვის მქონე. გახსენით ბრაუზერის გაფართოებების გვერდი (<code>chrome://extensions</code> Chrome-ში ან <code>about:addons</code> Firefox-ში), იხილეთ <b>uBO Lite</b> ვრცლად და გადართეთ <b>მომხმარებლის სკრიპტების ნებართვა</b> (აგრეთვე შეიძლება ეწეროს „დაუმოწმებელი გარეშე სკრიპტები“).",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "ცვლილებები",
@@ -187,16 +163,8 @@
     "message": "ადებს შემაწუხებელ შრეებსა და მისთანებს",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "ამჩნევს, რომ uBO Lite ჩართულია",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": " პირადულობის დაცვის ხარვეზებითაა",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "შეფერხებით მუშაობს, როცა uBO Lite ჩართულია",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "ფილტრის შესაქმნელი ცალკე გარემო",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "გარეგნული ან სკრიპტული ფილტრების იძულებით ამოქმედებისთვის განცაკლევებული გარემოდან, uBO Lite საჭიროებს მომხმარებლის სკრიპტების გაშვების ნებართვებს.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "შემმუშვებლის რეჟიმი",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "შეზღუდული გვერდი",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite ზღუდავს მოცემული გვერდის ჩატვირთვას:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "გვერდი შეიზღუდა ფილტრით {{listname}}.",

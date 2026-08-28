@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "අවසර අනවශ්‍ය අන්තර්ගත අවහිරකය. ස්ථාපනය කළ වහාම දැන්වීම්, ලුහුබැඳීම්, කැණීම් සහ තවත් දෑ අවහිර කරයි.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "නීති {{ruleCount}} ක් ජාල පෙරහන් {{filterCount}} කින් හරවා ඇත",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite - උපකරණ පුවරුව",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "සැකසුම්",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "සංවර්ධනය",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "පිළිබඳ",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "රහස්‍යතා ප්‍රතිපත්තිය",
@@ -103,10 +87,6 @@
     "message": "එක් කළ යුතු පෙරහන් ලැයිස්තුවේ URL",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "ආයාත කරන්න / නිර්යාත කරන්න",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "එක් කළ යුතු විශේෂිත ආලේපන/ස්ක්‍රිප්ට්ලට් පෙරහන්",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "ආයාත කළ ලැයිස්තු වලින් ආලේපන හෝ ස්ක්‍රිප්ට්ලට් පෙරහන් බලාත්මක කිරීම සඳහා, ඔබ uBO Lite වෙත පරිශීලක ස්ක්‍රිප්ට් ක්‍රියාත්මක කිරීමට අවසර දිය යුතුය. ඔබගේ බ්‍රවුසරයේ දිගු පිටුව විවෘත කරන්න (Chrome හි <code>chrome://extensions</code> හෝ Firefox හි <code>about:addons</code>), <b>uBO Lite</b> විස්තර විවෘත කරන්න, සහ <b>පරිශීලක ස්ක්‍රිප්ට් වලට ඉඩ දෙන්න</b> (එය “සත්‍යාපනය නොකළ තෙවන පාර්ශවීය ස්ක්‍රිප්ට්” ලෙසද හැඳින්වේ) සක්‍රිය කරන්න.",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "වෙනස්කම් සටහන",
@@ -187,16 +163,8 @@
     "message": "උඩැතිරි හෝ වෙනත් කරදර ඇති",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "uBO Lite අනාවරණය කරයි",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "පෞද්ගලිකත්‍වය ආශ්‍රිත ගැටළු තිබේ",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "uBO Lite සක්‍රීය කර ඇති විට සිදුවන අක්‍රමිකතා",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "පෙරහන්-නිර්මාණ වැලිපිල්ල",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "සංවර්ධක ප්‍රකාරය",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "පිටුව අවහිරයි",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite විසින් පහත පිටුව පූරණය වීම වළක්වා ඇත:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "{{listname}}හි ගැළපෙන පෙරහනක් නිසා පිටුව අවහිර කරන ලදී.",

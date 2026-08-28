@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "أداة فعالة لحجب المحتوى. يحجب الإعلانات، وأدوات التتبع، وبرمجيات التعدين، والمزيد فور التثبيت مباشرة.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} من القواعد، تم تحويلها من {{filterCount}} من خيارات تصفية الشبكة",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — لوحة التحكم",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "الإعدادات",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "تطوير",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "حول البرنامج",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "سياسة الخصوصية",
@@ -103,10 +87,6 @@
     "message": "رابط قائمة التصفية المراد إضافتها",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "لفرض عوامل تصفية تجميلية أو برمجية من القوائم المستوردة، يجب عليك منح uBO Lite إذنًا لتشغيل البرامج النصية للمستخدم.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "استيراد / تصدير",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "خيارات تصفية مظهر/سكريبت محددة لإضافتها",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "لتطبيق مرشحات التجميل أو السكريبت من القوائم المستوردة، يجب منح uBO Lite إذنا لتشغيل نصوص المستخدم. افتح صفحة الإضافات في متصفحك (<code>chrome://extensions</code> في Chrome أو <code>about:addons</code> في Firefox)، ثم افتح تفاصيل </b>uBO Lite<b>، </b> وفعل خيار السماح بنصوص المستخدم <b> (المعروف أيضا بـ \"نصوص الطرف الثالث غير الموثقة\").",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "سجل التغييرات",
@@ -187,16 +163,8 @@
     "message": "يحتوي على طبقات تداخل أو عوائق أخرى",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "يكتشف uBO Lite",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "لديه مشاكل متعلقة بالخصوصية",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "يحدث خلل وظيفي عندما يكون uBO Lite مفعلا",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "بيئة معزولة لإنشاء خيارات التصفية",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "لفرض استخدام عوامل تصفية تجميلية أو برامج نصية من بيئة الاختبار المعزولة، يجب عليك منح uBO Lite إذنًا لتشغيل البرامج النصية للمستخدم.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "وضع المطور",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "الصفحة محجوبة",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "لقد منع uBO Lite تحميل الصفحة التالية:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "تم حجب الصفحة بسبب خيار تصفية مطابق في{{listname}}.",

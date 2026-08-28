@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "Мазмұнды сүзгілеудің тиімді құралы. Жарнаманы, трекерлерді, майнерлерді және т.б. орнатқаннан кейін бірден блоктайды.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} ереже, {{filterCount}} желі сүзгісінен түрлендірілген",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — Бақылау тақтасы",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "Баптаулар",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "Әзірлеу",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "Туралы",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "Жекелік саясаты",
@@ -103,10 +87,6 @@
     "message": "Қосылатын сүзгі тізімінің URL-мекенжайы",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "Импорттау / Экспорттау",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "Қосылатын арнайы косметикалық сүзгілерді осы жерге кірістіріңіз",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "Импортталған тізімдерден алынған көрнекілік немесе скрипт сүзгілерін қолдану үшін сіз uBO Lite-ке пайдаланушы скрипттерін іске қосу рұқсатын беруіңіз керек. Браузеріңіздің кеңейтулер бетін ашыңыз (<code>chrome://extensions</code> Chrome-да немесе <code>about:addons</code> Firefox-та), <b>uBO Lite</b> мәліметтерін ашып, <b>Пайдаланушы скрипттеріне рұқсат ету</b> (сонымен қатар “расталмаған үшінші тарап скрипттері” деп аталады) қосқышын қосыңыз.",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "Өзгерістер журналы",
@@ -187,16 +163,8 @@
     "message": "Қабаттастырулар немесе басқа да кедергілер бар",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "uBO Lite-ты анықтайды",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "Жекелікке қатысты мәселелері бар",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "uBO Lite іске қосылғанда дұрыс жұмыс істемейді",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "Сүзгі құру құмсалғышы",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "Әзірлеуші режимі",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "Бет блокталды",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite келесі беттің жүктелуіне жол бермеді:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "{{listname}} ішіндегі сәйкес сүзгіге байланысты бет блокталды.",

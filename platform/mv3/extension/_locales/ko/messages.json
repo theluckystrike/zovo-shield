@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "효율적인 콘텐츠 차단기입니다. 설치 즉시 광고, 추적기, 암호화폐 채굴기 등을 차단합니다.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "네트워크 필터 {{filterCount}}개로부터 변환된 규칙 {{ruleCount}}개",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — 대시보드",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "설정",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "개발자용",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "정보",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "개인정보 처리방침",
@@ -103,10 +87,6 @@
     "message": "추가하려는 필터 목록의 URL 입력",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "가져온 목록의 요소 숨김 및 스크립트 주입 필터를 적용하려면 uBO Lite에 사용자 스크립트 실행 권한을 허용해야 합니다.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "가져오기 / 내보내기",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "추가하려는 요소 숨김 또는 스크립트 주입 필터 입력",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "브라우저의 확장 프로그램 페이지(Chrome <code>chrome://extensions</code>, Firefox는 <code>about:addons</code>)를 열고, <b>uBO Lite</b> 세부 정보를 연 뒤, <b>사용자 스크립트 허용</b>(혹은 \"검증되지 않은 타사 스크립트 허용\")을 활성화하세요.",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "변경 로그",
@@ -187,16 +163,8 @@
     "message": "오버레이나 기타 방해 요소를 보여줍니다",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "uBO Lite 사용을 감지합니다",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "개인정보 보호 관련 문제가 있습니다",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "uBO Lite가 활성화되어 있을 때 오작동합니다",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "필터 제작용 샌드박스",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "샌드박스 요소 숨김 및 스크립트 주입 필터를 적용하려면 uBO Lite에 사용자 스크립트 실행 권한을 허용해야 합니다.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "개발자 모드",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "페이지 차단됨",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite가 다음 페이지를 불러오지 못하도록 차단했습니다:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "이 페이지가 {{listname}} 내 필터링 항목에 해당하여 차단되었습니다.",

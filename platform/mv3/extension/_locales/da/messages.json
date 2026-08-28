@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "En effektiv indholdsblocker. Blokerer annoncer, trackere, minere mm. umiddelbart efter installation.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} regler, konverteret fra {{filterCount}} netværksfiltre",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — Kontrolpanel",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "Indstillinger",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "Udvikl",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "Om",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "Fortrolighedspolitik",
@@ -103,10 +87,6 @@
     "message": "URL'en til filterlisten, der skal tilføjes",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "For at håndhæve kosmetiske eller scriptlets-filtre fra importerede lister skal uBlock gives tilladelse til at afvikle bruger-scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "Import/ Eksport",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "Bestemte kosmetiske/scriplets-filtre, som skal tilføjes",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "Åbn webbrowserens udvidelsesside (<code>chrome://extensions</code> i Chrome eller <code>Om:tilføjelser</code> i Firefox), åbn <b>uBO Lite</b>-detaljerne, og slå <b>Tillad bruger-scripts</b> til (også kaldet “ubekræftede tredjeparts-scripts”).",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "Ændringslog",
@@ -187,16 +163,8 @@
     "message": "Har overlejringer eller andre gener",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "Detekterer uBO Lite",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "Har fortrolighedsrelaterede problemer",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "Fejlfungerer, når uBO Lite er aktiveret",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "Sandkasse til filteroprettelse",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "For at håndhæve kosmetiske eller scriptlets-filtre fra sandkasse skal uBlock gives tilladelse til at afvikle bruger-scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "Udviklertilstand",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "Side blokeret",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite har forhindret flg. side i at blive indlæst:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "Siden blev blokeret grundet et matchende filter i {{listname}}.",

@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "Un blocant de conținut eficient. Blochează reclamele, urmăritorii, minerii și multe altele imediat după instalare.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} de reguli, convertite din {{filterCount}} filtre de rețea",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — Panou de control",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "Opțiuni",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "Dezvoltă",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "Despre",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "Politică de confidențialitate",
@@ -103,10 +87,6 @@
     "message": "URL-ul listei de filtre de adăugat",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "Importă / Exportă",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "Lipește aici filtre cosmetice specifice",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "Pentru a aplica filtrele cosmetice sau de tip scriptlet din listele importate, trebuie să îi acorzi uBO Lite permisiunea de a rula scripturi de utilizator. Deschide pagina de extensii a browserului tău (<code>chrome://extensions</code> în Chrome sau <code>about:addons</code> în Firefox), deschide detaliile uBO Lite și activează opțiunea <b>Permite scripturile de utilizator</b> (numite și „scripturi de la terți neverificate”).",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "Jurnal de modificări",
@@ -187,16 +163,8 @@
     "message": "Are suprapuneri sau alte inconveniente",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "Detectează uBO Lite",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "Are probleme privind confidențialitatea",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "Defecțiuni atunci când uBO Lite este activat",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "Spațiu de testare pentru filtre",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "Mod dezvoltator",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "Pagină blocată",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite a împiedicat încărcarea următoarei pagini:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "Pagina a fost blocată din cauza unui filtru din {{listname}}.",

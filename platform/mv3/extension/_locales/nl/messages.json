@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "Een efficiënte inhoudsblokker. Blokkeert direct na installatie advertenties, trackers, miners en meer.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} regels, geconverteerd uit {{filterCount}} netwerkfilters",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite – Dashboard",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "Instellingen",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "Ontwikkelen",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "Over",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "Privacybeleid",
@@ -103,10 +87,6 @@
     "message": "URL van de toe te voegen filterlijst",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "Om cosmetische of scriptletfilters vanuit geïmporteerde lijsten toe te passen, moet u uBO Lite toestemming geven voor het uitvoeren van gebruikersscripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "Importeren / Exporteren",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "Specifieke cosmetische of scriptletfilters om toe te voegen",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "Open de extensiespagina van uw browser (<code>chrome://extensions</code> in Chrome of <code>about:addons</code> in Firefox), open de details van <b>uBO Lite</b>, en schakel <b>Gebruikersscripts toestaan</b> (ook wel aangeduid als ‘Niet-geverifieerde scripts van derden’) in.",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "Wijzigingenlogboek",
@@ -187,16 +163,8 @@
     "message": "Heeft overlappingen of andere ongemakken",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "Detecteert uBO Lite",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "Heeft privacy-gerelateerde problemen",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "Werkt niet als uBO Lite is ingeschakeld",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "Sandbox voor het aanmaken van filters",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "Om cosmetische of scriptletfilters vanuit de sandbox toe te passen, moet u uBO Lite toestemming geven voor het uitvoeren van gebruikersscripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "Ontwikkelaarsmodus",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "Pagina geblokkeerd",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite heeft het laden van de volgende pagina voorkomen:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "De pagina is geblokkeerd vanwege een overeenkomend filter in {{listname}}.",

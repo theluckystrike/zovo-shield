@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="css/fa-icons.css">
 <link rel="stylesheet" href="css/filtering-mode.css">
 <link rel="stylesheet" href="css/popup.css">
+<link rel="stylesheet" href="css/xzov0efe.css">
 <title data-i18n="extName"></title>
 </head>
 
@@ -17,6 +18,17 @@
 
 <main>
     <div id="hostname"><span></span>&shy;<span></span></div>
+    <!-- -------- -->
+    <div id="xzov0efe-scorecard" class="xzov0efe-card needHTTP" data-state="loading">
+        <div class="xzov0efe-score-main">
+            <span id="xzov0efe-grade" class="xzov0efe-grade" data-grade="">–</span>
+            <div class="xzov0efe-score-lines">
+                <span id="xzov0efe-score-title" data-i18n="xzScoreTitle">Site privacy</span>
+                <span id="xzov0efe-score-detail">…</span>
+            </div>
+        </div>
+        <div id="xzov0efe-toptrackers" class="xzov0efe-toptrackers"></div>
+    </div>
     <!-- -------- -->
     <div class="filteringModeSlider">
         <div class="filteringModeButton"><div></div></div>
@@ -48,6 +60,23 @@
         </span>
     </div>
     <!-- -------- -->
+    <div class="toolMenu xzTools">
+        <label data-i18n="xzToolsLabel">Privacy extras</label>
+        <span id="xzov0efe-cookiedecline" class="tool enabled" tabindex="0">
+            <span class="fa-icon">magic</span>
+            <span data-i18n="xzCookieDecline">Auto-decline cookie banners</span>
+            <span class="xzov0efe-toggle" data-state="off"></span>
+        </span>
+        <span id="xzov0efe-gotoDigest" class="tool enabled" tabindex="0">
+            <span class="fa-icon">bar-chart</span>
+            <span data-i18n="xzWeeklyDigest">Weekly tracker digest</span>
+        </span>
+        <span id="xzov0efe-gotoPro" class="tool enabled" tabindex="0">
+            <span class="fa-icon">unlock-alt</span>
+            <span data-i18n="xzProCta">Zovo Shield Pro</span>
+        </span>
+    </div>
+    <!-- -------- -->
     <div class="toolRibbon globalTools">
         <span id="gotoMatchedRules" class="fa-icon tool" tabindex="0" title="Show matched rules">list-alt<span class="caption">Show matched rules</span></span>
         <span id="gotoDashboard" class="fa-icon tool enabled" tabindex="0" data-i18n-title="popupTipDashboard">cogs<span class="caption" data-i18n="popupTipDashboard"></span></span>
@@ -61,6 +90,7 @@
 <script src="js/fa-icons.js" type="module"></script>
 <script src="js/i18n.js" type="module"></script>
 <script src="js/popup.js" type="module"></script>
+<script src="js/xz-popup.js" type="module"></script>
 
 </body>
 

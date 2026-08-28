@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "یک مسدود کننده محتوای بدون مجوز که بلافاصله پس از نصب، تبلیغات، ردیاب ها، ابزارهای استخراج و موارد دیگر را مسدود می کند.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} قانون، تبدیل‌شده از {{filterCount}} فیلتر شبکه",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite - داشبورد",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "تنظیمات",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "توسعه",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "درباره",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "حریم خصوصی",
@@ -103,10 +87,6 @@
     "message": "آدرس اینترنتی لیست فیلتر برای افزودن",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "وارد کردن / خارج کردن",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "فیلترهای ظاهری/اسکریپتلت خاص برای افزودن",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "برای اعمال فیلترهای ظاهری یا اسکریپتلت از لیست‌های وارد شده، باید به uBO Lite اجازه اجرای اسکریپت‌های کاربر را بدهید. صفحه افزونه‌های مرورگر خود را باز کنید (<code>chrome://extensions</code> در کروم یا <code>about:addons</code> در فایرفاکس)، جزئیات <b>uBO Lite</b> را باز کنید و گزینه <b>اجازه به اسکریپت‌های کاربر</b> (که به عنوان \"اسکریپت‌های شخص ثالث تایید نشده\" نیز شناخته می‌شود) را فعال کنید.",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "گزارش دگرگونی",
@@ -187,16 +163,8 @@
     "message": "دارای لایه‌های اضافی یا مشکلات مزاحم دیگر",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "شناسایی uBO Lite",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "دارای ایراد مربوط به حریم خصوصی است",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "هنگام فعال بودن uBO Lite دچار نقص می‌شود",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "محیط آزمایشی ایجاد فیلتر",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "حالت توسعه‌دهنده",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "صفحه مسدود شد",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite از بارگذاری صفحه زیر جلوگیری کرده است:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "این صفحه به دلیل وجود یک فیلتر منطبق در {{listname}} مسدود شد.",

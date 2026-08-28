@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "അനുമതി-കുറവ് ഉള്ളടക്ക ബ്ലോക്കർ. പരസ്യങ്ങൾ, ട്രാക്കറുകൾ, ക്രിപ്‌റ്റോ-മൈനർ എന്നിവയും മറ്റും ഇൻസ്റ്റാളുചെയ്യുമ്പോൾ ഉടനടി തടയുന്നു.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} നിയമങ്ങൾ, {{filterCount}} നെറ്റ്‌വർക്ക് ഫിൽട്ടറുകളിൽ നിന്ന് പരിവർത്തനം ചെയ്‌തു",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO ലൈറ്റ് - ഡാഷ്ബോർഡ്",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "ക്രമീകരണങ്ങൾ",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "വികസനം",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "കുറിച്ച്",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "സ്വകാര്യതാ നയം",
@@ -103,10 +87,6 @@
     "message": "ചേർക്കേണ്ട ഫിൽറ്റർ ലിസ്റ്റിന്റെ URL",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "ഇറക്കുമതി / കയറ്റുമതി",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "ചേർക്കേണ്ട പ്രത്യേക കോസ്മെറ്റിക്/സ്ക്രിപ്റ്റ്ലെറ്റ് ഫിൽറ്ററുകൾ",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "ഇറക്കുമതി ചെയ്ത ലിസ്റ്റുകളിൽ നിന്നുള്ള കോസ്മെറ്റിക് അല്ലെങ്കിൽ സ്ക്രിപ്റ്റ്ലെറ്റ് ഫിൽറ്ററുകൾ നടപ്പിലാക്കാൻ, യൂസർ സ്ക്രിപ്റ്റുകൾ പ്രവർത്തിപ്പിക്കാനുള്ള അനുമതി uBO Lite-ന് നിങ്ങൾ നൽകണം. നിങ്ങളുടെ ബ്രൗസറിന്റെ എക്സ്റ്റൻഷനുകൾ പേജ് തുറക്കുക (Chrome-ൽ <code>chrome://extensions</code> അല്ലെങ്കിൽ Firefox-ൽ <code>about:addons</code>), <b>uBO Lite</b> വിശദാംശങ്ങൾ തുറക്കുക, <b>യൂസർ സ്ക്രിപ്റ്റുകൾ അനുവദിക്കുക</b> (മറ്റൊരു വിധത്തിൽ “പരിശോധിക്കാത്ത മൂന്നാം കക്ഷി സ്ക്രിപ്റ്റുകൾ” എന്നും അറിയപ്പെടുന്നു) ടോഗിൾ ഓണാക്കുക.",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "ചേഞ്ച് ലോഗ്",
@@ -187,16 +163,8 @@
     "message": "ഓവർലേകളോ മറ്റ് ശല്യങ്ങളോ ഉണ്ട്",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "uBO Lite-നെ കണ്ടെത്തുന്നു",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "സ്വകാര്യത-സംബന്ധമായ പ്രശ്നങ്ങൾ ഉണ്ട്",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "uBO Lite പ്രവർത്തനക്ഷമമാകുമ്പോൾ തകരാറിലാകുന്നു",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "ഫിൽറ്റർ-നിർമ്മാണ സാൻഡ്ബോക്സ്",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "ഡെവലപ്പർ മോഡ്",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "പേജ് തടഞ്ഞു",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "ഇനിപ്പറയുന്ന പേജ് ലോഡാകുന്നതിൽ നിന്ന് uBO Lite തടഞ്ഞു:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "{{listname}} എന്നതിലെ പൊരുത്തപ്പെടുന്ന ഒരു ഫിൽറ്റർ കാരണം പേജ് തടഞ്ഞു.",

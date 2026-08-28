@@ -1,10 +1,10 @@
 {
   "extName": {
-    "message": "uBlock Origin Lite",
+    "message": "Zovo Shield",
     "description": "extension name."
   },
   "extShortDesc": {
-    "message": "An efficient content blocker. Blocks ads, trackers, miners, and more immediately upon installation.",
+    "message": "Block ads and trackers, see each site’s privacy grade, auto-decline cookie banners, and get a weekly tracker digest.",
     "description": "this will be in the Chrome web store: must be 132 characters or less"
   },
   "perRulesetStats": {
@@ -12,7 +12,7 @@
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
   },
   "dashboardName": {
-    "message": "uBO Lite — Dashboard",
+    "message": "Zovo Shield — Dashboard",
     "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
@@ -104,7 +104,7 @@
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
   "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
+    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant Zovo Shield permission to run user scripts.",
     "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
   },
   "customFiltersImportExportLabel": {
@@ -116,7 +116,7 @@
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
   "userScriptsInfo": {
-    "message": "Open your browser's extensions page (<code>chrome://extensions</code> in Chrome or <code>about:addons</code> in Firefox), open <b>uBO Lite</b> details, and toggle on <b>Allow user scripts</b> (also referred to as “unverified third-party scripts”).",
+    "message": "Open your browser's extensions page (<code>chrome://extensions</code> in Chrome or <code>about:addons</code> in Firefox), open <b>Zovo Shield</b> details, and toggle on <b>Allow user scripts</b> (also referred to as “unverified third-party scripts”).",
     "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
@@ -188,7 +188,7 @@
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option3": {
-    "message": "Detects uBO Lite",
+    "message": "Detects Zovo Shield",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option4": {
@@ -196,7 +196,7 @@
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option5": {
-    "message": "Malfunctions when uBO Lite is enabled",
+    "message": "Malfunctions when Zovo Shield is enabled",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -252,12 +252,12 @@
     "description": "This describes the 'complete' filtering mode"
   },
   "noFilteringModeDescription": {
-      "message": "List of websites for which no filtering will take place.",
-      "description": "A short description for the editable field which lists trusted sites"
+    "message": "List of websites for which no filtering will take place.",
+    "description": "A short description for the editable field which lists trusted sites"
   },
   "noFilteringModePlaceholder": {
-      "message": "[hostnames only]\nexample.com\ngames.example\n...",
-      "description": "Default text for in edit field"
+    "message": "[hostnames only]\nexample.com\ngames.example\n...",
+    "description": "Default text for in edit field"
   },
   "behaviorSectionLabel": {
     "message": "Behavior",
@@ -292,7 +292,7 @@
     "description": "Header for filter-creation section in the dashboard"
   },
   "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
+    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant Zovo Shield permission to run user scripts.",
     "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
   },
   "developerModeLabel": {
@@ -324,7 +324,7 @@
     "description": "Web page title for the strict-blocked page"
   },
   "strictblockSentence1": {
-    "message": "uBO Lite has prevented the following page from loading:",
+    "message": "Zovo Shield has prevented the following page from loading:",
     "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
@@ -458,5 +458,227 @@
   "unpickerUsage": {
     "message": "Select a filter below to highlight matching elements in the web page. Click the trash can to remove a filter.",
     "description": "Summary description on how to use the tool to remove custom filters"
+  },
+  "xzAboutForkLine": {
+    "message": "Zovo Shield is a GPL-3.0 fork of uBlock Origin Lite by Raymond Hill. Upstream copyright and licence terms are retained; the statement of changes ships as ZOVONOTICE.md in the source repository."
+  },
+  "xzAboutUpstream": {
+    "message": "Upstream project on GitHub (gorhill/uBlock)"
+  },
+  "xzCookieDecline": {
+    "message": "Auto-decline cookie banners"
+  },
+  "xzToggleOn": {
+    "message": "On"
+  },
+  "xzToggleOff": {
+    "message": "Off"
+  },
+  "xzToolsLabel": {
+    "message": "Zovo extras"
+  },
+  "xzWeeklyDigest": {
+    "message": "Weekly tracker digest"
+  },
+  "xzProCta": {
+    "message": "Zovo Shield Pro"
+  },
+  "xzScoreTitle": {
+    "message": "Privacy grade for this site"
+  },
+  "xzScoreUnavailable": {
+    "message": "No tracker data for this site yet"
+  },
+  "xzScoreDetail": {
+    "message": "{{seen}} seen · {{blocked}} blocked today"
+  },
+  "xzScoreDomains": {
+    "message": "{{count}} third-party domains contacted on this site today"
+  },
+  "xzDigestPageName": {
+    "message": "Digest"
+  },
+  "xzDigestHeading": {
+    "message": "Weekly tracker digest"
+  },
+  "xzDigestSummary": {
+    "message": "A local-only recap of the tracker pressure Zovo Shield saw and blocked over the last 7 days. Nothing ever leaves your browser."
+  },
+  "xzDigestDaily": {
+    "message": "Blocked per day"
+  },
+  "xzDigestTopTrackers": {
+    "message": "Top tracker domains"
+  },
+  "xzDigestTopSites": {
+    "message": "Sites with the most tracker pressure"
+  },
+  "xzDigestHistory": {
+    "message": "Previous weeks"
+  },
+  "xzDigestRefresh": {
+    "message": "Recompute digest"
+  },
+  "xzDigestEmpty": {
+    "message": "Nothing blocked in this window yet — browse a little and check back."
+  },
+  "xzDigestKpiSeen": {
+    "message": "Trackers seen"
+  },
+  "xzDigestKpiBlocked": {
+    "message": "Trackers blocked"
+  },
+  "xzDigestKpiSites": {
+    "message": "Sites visited"
+  },
+  "xzDigestRange": {
+    "message": "Last 7 days"
+  },
+  "xzDigestColWeek": {
+    "message": "Week"
+  },
+  "xzDigestColBlocked": {
+    "message": "Blocked"
+  },
+  "xzDigestColSeen": {
+    "message": "Seen"
+  },
+  "xzDigestColDomains": {
+    "message": "Domains"
+  },
+  "xzDigestColSite": {
+    "message": "Site"
+  },
+  "xzDigestColTracker": {
+    "message": "Tracker domain"
+  },
+  "xzDigestColTopTracker": {
+    "message": "Top tracker"
+  },
+  "xzDigestHistoryLocked": {
+    "message": "{{count}} more weeks of history with Zovo Shield Pro"
+  },
+  "xzZapLibPageName": {
+    "message": "Zap library"
+  },
+  "xzZapLibHeading": {
+    "message": "Zap library"
+  },
+  "xzZapLibSummary": {
+    "message": "Ready-made element-zapper presets. Applying a pack hides the matching annoyances on the listed sites — the rules become regular custom filters you can edit or remove anytime."
+  },
+  "xzZapLibIoHeading": {
+    "message": "Export / import your zap rules"
+  },
+  "xzZapLibIoSummary": {
+    "message": "Back up every rule you created with the element zapper (including preset packs) as JSON, or restore them on another browser."
+  },
+  "xzZapExport": {
+    "message": "Export zap rules (JSON)"
+  },
+  "xzZapImport": {
+    "message": "Import zap rules"
+  },
+  "xzZapApply": {
+    "message": "Apply"
+  },
+  "xzZapApplied": {
+    "message": "Applied"
+  },
+  "xzZapRemove": {
+    "message": "Remove"
+  },
+  "xzZapUpgrade": {
+    "message": "Unlock with Pro"
+  },
+  "xzZapSiteCount": {
+    "message": "{{count}} sites"
+  },
+  "xzZapExported": {
+    "message": "Exported {{count}} site rules"
+  },
+  "xzZapExportEmpty": {
+    "message": "Nothing to export yet — zap an element or apply a pack first."
+  },
+  "xzZapImported": {
+    "message": "Imported {{count}} site rules"
+  },
+  "xzZapImportBad": {
+    "message": "That file is not a Zovo Shield zap-rules export."
+  },
+  "xzZapLoadError": {
+    "message": "Could not load the preset library."
+  },
+  "xzProPageName": {
+    "message": "Pro"
+  },
+  "xzProHeading": {
+    "message": "Zovo Shield Pro"
+  },
+  "xzProSummary": {
+    "message": "The blocker is and stays free. A supporter key unlocks convenience extras and funds development."
+  },
+  "xzProPerkZap": {
+    "message": "All 24 zap-library packs (8 are free forever)"
+  },
+  "xzProPerkDigest": {
+    "message": "Full digest history beyond the last 2 weeks"
+  },
+  "xzProPerkSupport": {
+    "message": "You support an independent, no-analytics privacy tool"
+  },
+  "xzProKeyPlaceholder": {
+    "message": "ZOVO-XXXX-XXXX-XXXX-XXXX"
+  },
+  "xzProApply": {
+    "message": "Unlock"
+  },
+  "xzProClear": {
+    "message": "Remove key"
+  },
+  "xzProBuy": {
+    "message": "Get a supporter key at zovo.one"
+  },
+  "xzProNote": {
+    "message": "Zovo Shield is GPL-3.0 open source; anyone may rebuild it without the supporter check. Keys are verified online once, then cached locally for offline use."
+  },
+  "xzProBadgeFree": {
+    "message": "Free"
+  },
+  "xzProBadgePro": {
+    "message": "Pro"
+  },
+  "xzProStatusFree": {
+    "message": "You are on the free tier — every blocking feature stays free forever."
+  },
+  "xzProStatusPro": {
+    "message": "Supporter unlock active ({{tier}}, key ····{{tail}}). Thank you!"
+  },
+  "xzProMsgEmpty": {
+    "message": "Paste your key first"
+  },
+  "xzProMsgVerifying": {
+    "message": "Verifying…"
+  },
+  "xzProMsgOk": {
+    "message": "Unlocked — thank you for supporting Zovo Shield!"
+  },
+  "xzProMsgCleared": {
+    "message": "Key removed from this browser"
+  },
+  "xzProMsgBadShape": {
+    "message": "That doesn’t look like a Zovo key (ZOVO-XXXX-XXXX-XXXX-XXXX)."
+  },
+  "xzProMsgInvalid": {
+    "message": "This key was not recognized. Check for typos and try again."
+  },
+  "xzProMsgRateLimited": {
+    "message": "Too many attempts — wait a minute and try again."
+  },
+  "xzProMsgOffline": {
+    "message": "Could not reach the verification server. Check your connection and try again."
+  },
+  "xzProMsgError": {
+    "message": "Could not verify the key right now."
   }
 }

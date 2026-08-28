@@ -1,0 +1,393 @@
+{
+  "version": 1,
+  "packs": [
+    {
+      "id": "onesignal-push-nags",
+      "pro": false,
+      "name": "OneSignal push prompts",
+      "desc": "Hides OneSignal slide-down and bell push-notification prompts.",
+      "sites": {
+        "nydailynews.com": [ "#onesignal-slidedown-container", "#onesignal-bell-container" ],
+        "chicagotribune.com": [ "#onesignal-slidedown-container", "#onesignal-bell-container" ],
+        "dailymail.co.uk": [ "#onesignal-slidedown-container", "#onesignal-bell-container" ],
+        "independent.co.uk": [ "#onesignal-slidedown-container", "#onesignal-bell-container" ],
+        "the-sun.com": [ "#onesignal-slidedown-container", "#onesignal-bell-container" ],
+        "mirror.co.uk": [ "#onesignal-slidedown-container", "#onesignal-bell-container" ],
+        "express.co.uk": [ "#onesignal-slidedown-container", "#onesignal-bell-container" ],
+        "ndtv.com": [ "#onesignal-slidedown-container", "#onesignal-bell-container" ],
+        "indiatimes.com": [ "#onesignal-slidedown-container", "#onesignal-bell-container" ],
+        "sfgate.com": [ "#onesignal-slidedown-container", "#onesignal-bell-container" ]
+      }
+    },
+    {
+      "id": "piano-meter-nags",
+      "pro": false,
+      "name": "Piano newsletter modals",
+      "desc": "Hides Piano (Tinypass) newsletter and meter overlay modals.",
+      "sites": {
+        "bloomberg.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper" ],
+        "businessinsider.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper" ],
+        "cnbc.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper" ],
+        "usatoday.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper" ],
+        "inquirer.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper" ],
+        "seattletimes.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper" ],
+        "newsday.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper" ],
+        "nymag.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper" ],
+        "techcrunch.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper" ],
+        "theverge.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper" ]
+      }
+    },
+    {
+      "id": "chat-bubble-hider",
+      "pro": false,
+      "name": "Chat bubbles",
+      "desc": "Hides Intercom, Zendesk and Drift chat launcher bubbles.",
+      "sites": {
+        "notion.so": [ "#intercom-container", ".zEWidget-launcher", "#drift-widget-container", "#drift-frame-controller" ],
+        "canva.com": [ "#intercom-container", ".zEWidget-launcher", "#drift-widget-container", "#drift-frame-controller" ],
+        "shopify.com": [ "#intercom-container", ".zEWidget-launcher", "#drift-widget-container", "#drift-frame-controller" ],
+        "hubspot.com": [ "#intercom-container", ".zEWidget-launcher", "#drift-widget-container", "#drift-frame-controller" ],
+        "mailchimp.com": [ "#intercom-container", ".zEWidget-launcher", "#drift-widget-container", "#drift-frame-controller" ],
+        "atlassian.com": [ "#intercom-container", ".zEWidget-launcher", "#drift-widget-container", "#drift-frame-controller" ],
+        "digitalocean.com": [ "#intercom-container", ".zEWidget-launcher", "#drift-widget-container", "#drift-frame-controller" ],
+        "namecheap.com": [ "#intercom-container", ".zEWidget-launcher", "#drift-widget-container", "#drift-frame-controller" ],
+        "godaddy.com": [ "#intercom-container", ".zEWidget-launcher", "#drift-widget-container", "#drift-frame-controller" ],
+        "airbnb.com": [ "#intercom-container", ".zEWidget-launcher", "#drift-widget-container", "#drift-frame-controller" ]
+      }
+    },
+    {
+      "id": "social-sticky-shares",
+      "pro": false,
+      "name": "Sticky share bars",
+      "desc": "Hides floating AddThis, ShareThis and AddToAny share bars.",
+      "sites": {
+        "buzzfeed.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".st-sticky-share-buttons", ".a2a_floating_style" ],
+        "huffpost.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".st-sticky-share-buttons", ".a2a_floating_style" ],
+        "mashable.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".st-sticky-share-buttons", ".a2a_floating_style" ],
+        "thespruce.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".st-sticky-share-buttons", ".a2a_floating_style" ],
+        "verywellmind.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".st-sticky-share-buttons", ".a2a_floating_style" ],
+        "foodnetwork.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".st-sticky-share-buttons", ".a2a_floating_style" ],
+        "allrecipes.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".st-sticky-share-buttons", ".a2a_floating_style" ],
+        "countryliving.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".st-sticky-share-buttons", ".a2a_floating_style" ],
+        "goodhousekeeping.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".st-sticky-share-buttons", ".a2a_floating_style" ],
+        "delish.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".st-sticky-share-buttons", ".a2a_floating_style" ]
+      }
+    },
+    {
+      "id": "sponsored-widgets",
+      "pro": false,
+      "name": "Sponsored content widgets",
+      "desc": "Hides Outbrain and Taboola 'around the web' widget remnants.",
+      "sites": {
+        "cnn.com": [ ".OUTBRAIN", "div[id^=\"taboola-\"]", ".trc_related_container" ],
+        "foxnews.com": [ ".OUTBRAIN", "div[id^=\"taboola-\"]", ".trc_related_container" ],
+        "nbcnews.com": [ ".OUTBRAIN", "div[id^=\"taboola-\"]", ".trc_related_container" ],
+        "nypost.com": [ ".OUTBRAIN", "div[id^=\"taboola-\"]", ".trc_related_container" ],
+        "usatoday.com": [ ".OUTBRAIN", "div[id^=\"taboola-\"]", ".trc_related_container" ],
+        "weather.com": [ ".OUTBRAIN", "div[id^=\"taboola-\"]", ".trc_related_container" ],
+        "cbssports.com": [ ".OUTBRAIN", "div[id^=\"taboola-\"]", ".trc_related_container" ],
+        "bleacherreport.com": [ ".OUTBRAIN", "div[id^=\"taboola-\"]", ".trc_related_container" ],
+        "tmz.com": [ ".OUTBRAIN", "div[id^=\"taboola-\"]", ".trc_related_container" ],
+        "aol.com": [ ".OUTBRAIN", "div[id^=\"taboola-\"]", ".trc_related_container" ]
+      }
+    },
+    {
+      "id": "app-smart-banners",
+      "pro": false,
+      "name": "App-install banners",
+      "desc": "Hides 'get our app' smart banners on mobile-oriented sites.",
+      "sites": {
+        "reddit.com": [ ".smartbanner", "#smartbanner" ],
+        "quora.com": [ ".smartbanner", "#smartbanner" ],
+        "pinterest.com": [ ".smartbanner", "#smartbanner" ],
+        "tripadvisor.com": [ ".smartbanner", "#smartbanner" ],
+        "yelp.com": [ ".smartbanner", "#smartbanner" ],
+        "imdb.com": [ ".smartbanner", "#smartbanner" ],
+        "fandom.com": [ ".smartbanner", "#smartbanner" ],
+        "wikihow.com": [ ".smartbanner", "#smartbanner" ],
+        "investopedia.com": [ ".smartbanner", "#smartbanner" ],
+        "healthline.com": [ ".smartbanner", "#smartbanner" ]
+      }
+    },
+    {
+      "id": "survey-intercepts",
+      "pro": false,
+      "name": "Survey intercepts",
+      "desc": "Hides Qualtrics website-feedback survey intercepts.",
+      "sites": {
+        "target.com": [ "div[id^=\"ZN_\"]" ],
+        "walmart.com": [ "div[id^=\"ZN_\"]" ],
+        "bestbuy.com": [ "div[id^=\"ZN_\"]" ],
+        "homedepot.com": [ "div[id^=\"ZN_\"]" ],
+        "lowes.com": [ "div[id^=\"ZN_\"]" ],
+        "macys.com": [ "div[id^=\"ZN_\"]" ],
+        "nordstrom.com": [ "div[id^=\"ZN_\"]" ],
+        "southwest.com": [ "div[id^=\"ZN_\"]" ],
+        "delta.com": [ "div[id^=\"ZN_\"]" ],
+        "aa.com": [ "div[id^=\"ZN_\"]" ]
+      }
+    },
+    {
+      "id": "floating-video",
+      "pro": false,
+      "name": "Follow-you videos",
+      "desc": "Hides JW Player floating mini-players that follow your scroll.",
+      "sites": {
+        "dailymail.co.uk": [ ".jw-flag-floating" ],
+        "the-sun.com": [ ".jw-flag-floating" ],
+        "mirror.co.uk": [ ".jw-flag-floating" ],
+        "express.co.uk": [ ".jw-flag-floating" ],
+        "nypost.com": [ ".jw-flag-floating" ],
+        "washingtonexaminer.com": [ ".jw-flag-floating" ],
+        "breitbart.com": [ ".jw-flag-floating" ],
+        "thehill.com": [ ".jw-flag-floating" ],
+        "insider.com": [ ".jw-flag-floating" ],
+        "cnet.com": [ ".jw-flag-floating" ]
+      }
+    },
+    {
+      "id": "google-one-tap",
+      "pro": true,
+      "name": "Google One-Tap prompts",
+      "desc": "Hides 'Sign in with Google' One-Tap overlays.",
+      "sites": {
+        "medium.com": [ "#credential_picker_container" ],
+        "nytimes.com": [ "#credential_picker_container" ],
+        "washingtonpost.com": [ "#credential_picker_container" ],
+        "pinterest.com": [ "#credential_picker_container" ],
+        "quora.com": [ "#credential_picker_container" ],
+        "yelp.com": [ "#credential_picker_container" ],
+        "tripadvisor.com": [ "#credential_picker_container" ],
+        "zillow.com": [ "#credential_picker_container" ],
+        "reddit.com": [ "#credential_picker_container" ],
+        "ebay.com": [ "#credential_picker_container" ],
+        "etsy.com": [ "#credential_picker_container" ],
+        "stackoverflow.com": [ "#credential_picker_container" ],
+        "glassdoor.com": [ "#credential_picker_container" ],
+        "indeed.com": [ "#credential_picker_container" ],
+        "spotify.com": [ "#credential_picker_container" ]
+      }
+    },
+    {
+      "id": "chat-bubble-hider-plus",
+      "pro": true,
+      "name": "Chat bubbles (all vendors)",
+      "desc": "Hides tawk.to, Crisp, HubSpot, Olark and LiveChat widgets by frame source.",
+      "sites": {
+        "wix.com": [ "iframe[src*=\"embed.tawk.to\"]", ".crisp-client", "#hubspot-messages-iframe-container", "#olark-chat", "iframe[src*=\"livechat\"]" ],
+        "squarespace.com": [ "iframe[src*=\"embed.tawk.to\"]", ".crisp-client", "#hubspot-messages-iframe-container", "#olark-chat", "iframe[src*=\"livechat\"]" ],
+        "wordpress.com": [ "iframe[src*=\"embed.tawk.to\"]", ".crisp-client", "#hubspot-messages-iframe-container", "#olark-chat", "iframe[src*=\"livechat\"]" ],
+        "weebly.com": [ "iframe[src*=\"embed.tawk.to\"]", ".crisp-client", "#hubspot-messages-iframe-container", "#olark-chat", "iframe[src*=\"livechat\"]" ],
+        "godaddy.com": [ "iframe[src*=\"embed.tawk.to\"]", ".crisp-client", "#hubspot-messages-iframe-container", "#olark-chat", "iframe[src*=\"livechat\"]" ],
+        "hostinger.com": [ "iframe[src*=\"embed.tawk.to\"]", ".crisp-client", "#hubspot-messages-iframe-container", "#olark-chat", "iframe[src*=\"livechat\"]" ],
+        "bluehost.com": [ "iframe[src*=\"embed.tawk.to\"]", ".crisp-client", "#hubspot-messages-iframe-container", "#olark-chat", "iframe[src*=\"livechat\"]" ],
+        "siteground.com": [ "iframe[src*=\"embed.tawk.to\"]", ".crisp-client", "#hubspot-messages-iframe-container", "#olark-chat", "iframe[src*=\"livechat\"]" ],
+        "dreamhost.com": [ "iframe[src*=\"embed.tawk.to\"]", ".crisp-client", "#hubspot-messages-iframe-container", "#olark-chat", "iframe[src*=\"livechat\"]" ],
+        "namecheap.com": [ "iframe[src*=\"embed.tawk.to\"]", ".crisp-client", "#hubspot-messages-iframe-container", "#olark-chat", "iframe[src*=\"livechat\"]" ]
+      }
+    },
+    {
+      "id": "fb-customer-chat",
+      "pro": true,
+      "name": "Facebook chat plugins",
+      "desc": "Hides Facebook Customer Chat plugin bubbles.",
+      "sites": {
+        "etsy.com": [ ".fb_dialog", "iframe[src*=\"customer_chat\"]" ],
+        "shopify.com": [ ".fb_dialog", "iframe[src*=\"customer_chat\"]" ],
+        "bigcommerce.com": [ ".fb_dialog", "iframe[src*=\"customer_chat\"]" ],
+        "squareup.com": [ ".fb_dialog", "iframe[src*=\"customer_chat\"]" ],
+        "ecwid.com": [ ".fb_dialog", "iframe[src*=\"customer_chat\"]" ],
+        "weebly.com": [ ".fb_dialog", "iframe[src*=\"customer_chat\"]" ],
+        "wix.com": [ ".fb_dialog", "iframe[src*=\"customer_chat\"]" ],
+        "volusion.com": [ ".fb_dialog", "iframe[src*=\"customer_chat\"]" ]
+      }
+    },
+    {
+      "id": "outbrain-deep",
+      "pro": true,
+      "name": "Outbrain deep clean",
+      "desc": "Hides Outbrain widget variants and placeholders.",
+      "sites": {
+        "cnn.com": [ ".OUTBRAIN", ".ob-widget", ".ob_what", "div[data-dynamic-truncate-dataset] > .ob-widget" ],
+        "foxnews.com": [ ".OUTBRAIN", ".ob-widget", ".ob_what" ],
+        "sky.com": [ ".OUTBRAIN", ".ob-widget", ".ob_what" ],
+        "msn.com": [ ".OUTBRAIN", ".ob-widget", ".ob_what" ],
+        "espn.com": [ ".OUTBRAIN", ".ob-widget", ".ob_what" ],
+        "cbssports.com": [ ".OUTBRAIN", ".ob-widget", ".ob_what" ],
+        "nypost.com": [ ".OUTBRAIN", ".ob-widget", ".ob_what" ],
+        "washingtonpost.com": [ ".OUTBRAIN", ".ob-widget", ".ob_what" ],
+        "theguardian.com": [ ".OUTBRAIN", ".ob-widget", ".ob_what" ],
+        "telegraph.co.uk": [ ".OUTBRAIN", ".ob-widget", ".ob_what" ]
+      }
+    },
+    {
+      "id": "taboola-deep",
+      "pro": true,
+      "name": "Taboola deep clean",
+      "desc": "Hides Taboola feed variants and thumbnails blocks.",
+      "sites": {
+        "aol.com": [ "div[id^=\"taboola-\"]", ".trc_rbox", ".trc-content-sponsored" ],
+        "weather.com": [ "div[id^=\"taboola-\"]", ".trc_rbox", ".trc-content-sponsored" ],
+        "usatoday.com": [ "div[id^=\"taboola-\"]", ".trc_rbox", ".trc-content-sponsored" ],
+        "nbcnews.com": [ "div[id^=\"taboola-\"]", ".trc_rbox", ".trc-content-sponsored" ],
+        "cbsnews.com": [ "div[id^=\"taboola-\"]", ".trc_rbox", ".trc-content-sponsored" ],
+        "businessinsider.com": [ "div[id^=\"taboola-\"]", ".trc_rbox", ".trc-content-sponsored" ],
+        "thestreet.com": [ "div[id^=\"taboola-\"]", ".trc_rbox", ".trc-content-sponsored" ],
+        "bizjournals.com": [ "div[id^=\"taboola-\"]", ".trc_rbox", ".trc-content-sponsored" ],
+        "patch.com": [ "div[id^=\"taboola-\"]", ".trc_rbox", ".trc-content-sponsored" ],
+        "sfgate.com": [ "div[id^=\"taboola-\"]", ".trc_rbox", ".trc-content-sponsored" ]
+      }
+    },
+    {
+      "id": "zergnet-revcontent",
+      "pro": true,
+      "name": "ZergNet & Revcontent units",
+      "desc": "Hides ZergNet and Revcontent recommendation units.",
+      "sites": {
+        "tmz.com": [ "#zergnet-widget", ".rev-content" ],
+        "perezhilton.com": [ "#zergnet-widget", ".rev-content" ],
+        "thefederalist.com": [ "#zergnet-widget", ".rev-content" ],
+        "westernjournal.com": [ "#zergnet-widget", ".rev-content" ],
+        "conservativetribune.com": [ "#zergnet-widget", ".rev-content" ],
+        "bizpacreview.com": [ "#zergnet-widget", ".rev-content" ],
+        "newsbusters.org": [ "#zergnet-widget", ".rev-content" ],
+        "twitchy.com": [ "#zergnet-widget", ".rev-content" ],
+        "hotair.com": [ "#zergnet-widget", ".rev-content" ],
+        "townhall.com": [ "#zergnet-widget", ".rev-content" ]
+      }
+    },
+    {
+      "id": "onesignal-deep",
+      "pro": true,
+      "name": "Push prompts (all OneSignal)",
+      "desc": "Hides every OneSignal prompt surface: slidedown, bell, custom link.",
+      "sites": {
+        "nydailynews.com": [ "#onesignal-slidedown-container", "#onesignal-bell-container", ".onesignal-customlink-container" ],
+        "chicagotribune.com": [ "#onesignal-slidedown-container", "#onesignal-bell-container", ".onesignal-customlink-container" ],
+        "dailymail.co.uk": [ "#onesignal-slidedown-container", "#onesignal-bell-container", ".onesignal-customlink-container" ],
+        "independent.co.uk": [ "#onesignal-slidedown-container", "#onesignal-bell-container", ".onesignal-customlink-container" ],
+        "mirror.co.uk": [ "#onesignal-slidedown-container", "#onesignal-bell-container", ".onesignal-customlink-container" ],
+        "express.co.uk": [ "#onesignal-slidedown-container", "#onesignal-bell-container", ".onesignal-customlink-container" ],
+        "ndtv.com": [ "#onesignal-slidedown-container", "#onesignal-bell-container", ".onesignal-customlink-container" ],
+        "hindustantimes.com": [ "#onesignal-slidedown-container", "#onesignal-bell-container", ".onesignal-customlink-container" ],
+        "indianexpress.com": [ "#onesignal-slidedown-container", "#onesignal-bell-container", ".onesignal-customlink-container" ],
+        "sfgate.com": [ "#onesignal-slidedown-container", "#onesignal-bell-container", ".onesignal-customlink-container" ]
+      }
+    },
+    {
+      "id": "piano-deep",
+      "pro": true,
+      "name": "Piano deep clean",
+      "desc": "Hides Piano modal, backdrop, iframe wrapper and inline offer units.",
+      "sites": {
+        "bloomberg.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper", ".tp-container-inner" ],
+        "businessinsider.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper", ".tp-container-inner" ],
+        "cnbc.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper", ".tp-container-inner" ],
+        "usatoday.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper", ".tp-container-inner" ],
+        "inquirer.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper", ".tp-container-inner" ],
+        "seattletimes.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper", ".tp-container-inner" ],
+        "newsday.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper", ".tp-container-inner" ],
+        "nymag.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper", ".tp-container-inner" ],
+        "techcrunch.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper", ".tp-container-inner" ],
+        "theathletic.com": [ ".tp-modal", ".tp-backdrop", ".tp-iframe-wrapper", ".tp-container-inner" ]
+      }
+    },
+    {
+      "id": "qualtrics-deep",
+      "pro": true,
+      "name": "Survey intercepts (retail+travel)",
+      "desc": "Hides Qualtrics intercepts on a wider retail and travel set.",
+      "sites": {
+        "target.com": [ "div[id^=\"ZN_\"]" ],
+        "walmart.com": [ "div[id^=\"ZN_\"]" ],
+        "bestbuy.com": [ "div[id^=\"ZN_\"]" ],
+        "costco.com": [ "div[id^=\"ZN_\"]" ],
+        "kohls.com": [ "div[id^=\"ZN_\"]" ],
+        "gap.com": [ "div[id^=\"ZN_\"]" ],
+        "oldnavy.com": [ "div[id^=\"ZN_\"]" ],
+        "hm.com": [ "div[id^=\"ZN_\"]" ],
+        "zara.com": [ "div[id^=\"ZN_\"]" ],
+        "united.com": [ "div[id^=\"ZN_\"]" ],
+        "britishairways.com": [ "div[id^=\"ZN_\"]" ],
+        "marriott.com": [ "div[id^=\"ZN_\"]" ],
+        "hilton.com": [ "div[id^=\"ZN_\"]" ],
+        "ihg.com": [ "div[id^=\"ZN_\"]" ],
+        "expedia.com": [ "div[id^=\"ZN_\"]" ]
+      }
+    },
+    {
+      "id": "branch-journeys",
+      "pro": true,
+      "name": "Branch app banners",
+      "desc": "Hides Branch Journeys 'open in app' top banners.",
+      "sites": {
+        "yelp.com": [ ".branch-journeys-top", ".smartbanner", "#smartbanner" ],
+        "tripadvisor.com": [ ".branch-journeys-top", ".smartbanner", "#smartbanner" ],
+        "pinterest.com": [ ".branch-journeys-top", ".smartbanner", "#smartbanner" ],
+        "reddit.com": [ ".branch-journeys-top", ".smartbanner", "#smartbanner" ],
+        "quora.com": [ ".branch-journeys-top", ".smartbanner", "#smartbanner" ],
+        "imdb.com": [ ".branch-journeys-top", ".smartbanner", "#smartbanner" ],
+        "fandom.com": [ ".branch-journeys-top", ".smartbanner", "#smartbanner" ],
+        "zomato.com": [ ".branch-journeys-top", ".smartbanner", "#smartbanner" ],
+        "opentable.com": [ ".branch-journeys-top", ".smartbanner", "#smartbanner" ],
+        "ticketmaster.com": [ ".branch-journeys-top", ".smartbanner", "#smartbanner" ]
+      }
+    },
+    {
+      "id": "onetrust-floaters",
+      "pro": true,
+      "name": "Cookie settings floaters",
+      "desc": "Hides the residual floating cookie-settings button after consent.",
+      "sites": {
+        "nytimes.com": [ ".ot-floating-button" ],
+        "washingtonpost.com": [ ".ot-floating-button" ],
+        "bbc.com": [ ".ot-floating-button" ],
+        "theguardian.com": [ ".ot-floating-button" ],
+        "forbes.com": [ ".ot-floating-button" ],
+        "wsj.com": [ ".ot-floating-button" ],
+        "ft.com": [ ".ot-floating-button" ],
+        "reuters.com": [ ".ot-floating-button" ],
+        "apnews.com": [ ".ot-floating-button" ],
+        "bloomberg.com": [ ".ot-floating-button" ]
+      }
+    },
+    {
+      "id": "share-deep",
+      "pro": true,
+      "name": "Share widgets deep clean",
+      "desc": "Hides AddThis jumboshare and AddToAny overlay variants.",
+      "sites": {
+        "buzzfeed.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".a2a_floating_style", ".a2a_overlay" ],
+        "huffpost.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".a2a_floating_style", ".a2a_overlay" ],
+        "mashable.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".a2a_floating_style", ".a2a_overlay" ],
+        "thespruce.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".a2a_floating_style", ".a2a_overlay" ],
+        "foodnetwork.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".a2a_floating_style", ".a2a_overlay" ],
+        "allrecipes.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".a2a_floating_style", ".a2a_overlay" ],
+        "countryliving.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".a2a_floating_style", ".a2a_overlay" ],
+        "goodhousekeeping.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".a2a_floating_style", ".a2a_overlay" ],
+        "delish.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".a2a_floating_style", ".a2a_overlay" ],
+        "seriouseats.com": [ "#at4-share", "#at4-scc", ".at4-jumboshare", ".a2a_floating_style", ".a2a_overlay" ]
+      }
+    },
+    {
+      "id": "jw-floating-deep",
+      "pro": true,
+      "name": "Follow-you videos (all players)",
+      "desc": "Hides JW and other floating mini-players on a wider news set.",
+      "sites": {
+        "dailymail.co.uk": [ ".jw-flag-floating", ".vjs-floating" ],
+        "the-sun.com": [ ".jw-flag-floating", ".vjs-floating" ],
+        "mirror.co.uk": [ ".jw-flag-floating", ".vjs-floating" ],
+        "express.co.uk": [ ".jw-flag-floating", ".vjs-floating" ],
+        "nypost.com": [ ".jw-flag-floating", ".vjs-floating" ],
+        "pagesix.com": [ ".jw-flag-floating", ".vjs-floating" ],
+        "decider.com": [ ".jw-flag-floating", ".vjs-floating" ],
+        "washingtonexaminer.com": [ ".jw-flag-floating", ".vjs-floating" ],
+        "thehill.com": [ ".jw-flag-floating", ".vjs-floating" ],
+        "rollingstone.com": [ ".jw-flag-floating", ".vjs-floating" ],
+        "variety.com": [ ".jw-flag-floating", ".vjs-floating" ],
+        "deadline.com": [ ".jw-flag-floating", ".vjs-floating" ]
+      }
+    }
+  ]
+}

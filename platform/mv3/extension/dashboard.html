@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="css/settings.css">
 <link rel="stylesheet" href="css/filter-editor.css">
 <link rel="stylesheet" href="css/develop.css">
+<link rel="stylesheet" href="css/xzov0efe.css">
 
 <link rel="icon" type="image/png" href="img/icon_64.png"/>
 </head>
@@ -24,10 +25,13 @@
 <!-- -------- -->
 <header>
     <nav id="dashboard-nav">
-        <span class="logo"><img data-i18n-title="extName" src="img/ublock.svg" alt="uBO Lite"></span><!--
+        <span class="logo"><img data-i18n-title="extName" src="img/xzov0efe-mark.svg" alt="Zovo Shield"></span><!--
      --><button class="tabButton" type="button" data-pane="settings" data-i18n="settingsPageName" tabindex="0"></button><!--
      --><button class="tabButton" type="button" data-pane="rulesets" data-i18n="aboutFilterLists" tabindex="0"></button><!--
      --><button class="tabButton" type="button" data-pane="filters" data-i18n="customFiltersPageName"tabindex="0"></button><!--
+     --><button class="tabButton" type="button" data-pane="zaplib" data-i18n="xzZapLibPageName" tabindex="0"></button><!--
+     --><button class="tabButton" type="button" data-pane="digest" data-i18n="xzDigestPageName" tabindex="0"></button><!--
+     --><button class="tabButton" type="button" data-pane="pro" data-i18n="xzProPageName" tabindex="0"></button><!--
      --><button class="tabButton" type="button" data-pane="develop" data-i18n="developPageName"tabindex="0"></button><!--
      --><button class="tabButton" type="button" data-pane="about" data-i18n="aboutPageName" tabindex="0"></button>
     </nav>
@@ -165,16 +169,84 @@
 </section>
 
 <!-- -------- -->
+<section data-pane="zaplib">
+    <div class="body">
+        <h3 data-i18n="xzZapLibHeading">Zap library</h3>
+        <p data-i18n="xzZapLibSummary"></p>
+        <div id="xzov0efe-packlist"></div>
+        <h3 class="xzov0efe-section-title" data-i18n="xzZapLibIoHeading">Export / import your zap rules</h3>
+        <p data-i18n="xzZapLibIoSummary"></p>
+        <p>
+            <button id="xzov0efe-zapExport" class="iconified dontshrink" type="button"><span class="fa-icon">upload-alt</span><span data-i18n="xzZapExport">Export zap rules (JSON)</span><span class="hover"></span></button>
+            <button id="xzov0efe-zapImport" class="iconified dontshrink" type="button"><span class="fa-icon">download-alt</span><span data-i18n="xzZapImport">Import zap rules</span><span class="hover"></span></button><input id="xzov0efe-zapImportFile" type="file" accept="application/json" style="display:none">
+        </p>
+        <p id="xzov0efe-zapIoStatus" role="status"></p>
+    </div>
+</section>
+
+<!-- -------- -->
+<section data-pane="digest">
+    <div class="body">
+        <h3 data-i18n="xzDigestHeading">Weekly tracker digest</h3>
+        <p data-i18n="xzDigestSummary"></p>
+        <div id="xzov0efe-digest-kpis" class="xzov0efe-kpis"></div>
+        <h3 class="xzov0efe-section-title" data-i18n="xzDigestDaily">Blocked per day</h3>
+        <div id="xzov0efe-digest-series"></div>
+        <h3 class="xzov0efe-section-title" data-i18n="xzDigestTopTrackers">Top tracker domains</h3>
+        <table class="xzov0efe-table" id="xzov0efe-digest-trackers"></table>
+        <h3 class="xzov0efe-section-title" data-i18n="xzDigestTopSites">Sites with the most tracker pressure</h3>
+        <table class="xzov0efe-table" id="xzov0efe-digest-sites"></table>
+        <h3 class="xzov0efe-section-title" data-i18n="xzDigestHistory">Previous weeks</h3>
+        <table class="xzov0efe-table" id="xzov0efe-digest-history"></table>
+        <p>
+            <button id="xzov0efe-digest-refresh" class="iconified dontshrink" type="button"><span class="fa-icon">refresh</span><span data-i18n="xzDigestRefresh">Recompute digest</span><span class="hover"></span></button>
+        </p>
+        <p id="xzov0efe-digest-note" class="xzov0efe-note"></p>
+    </div>
+</section>
+
+<!-- -------- -->
+<section data-pane="pro">
+    <div class="body">
+        <h3 data-i18n="xzProHeading">Zovo Shield Pro</h3>
+        <p data-i18n="xzProSummary"></p>
+        <div class="xzov0efe-card xzov0efe-procard">
+            <div class="xzov0efe-prostatus">
+                <span id="xzov0efe-proBadge" class="xzov0efe-badge" data-state="free"></span>
+                <span id="xzov0efe-proStatusText"></span>
+            </div>
+            <ul class="xzov0efe-properks">
+                <li data-i18n="xzProPerkZap"></li>
+                <li data-i18n="xzProPerkDigest"></li>
+                <li data-i18n="xzProPerkSupport"></li>
+            </ul>
+            <p id="xzov0efe-proKeyRow">
+                <input id="xzov0efe-proKey" type="text" autocomplete="off" spellcheck="false"
+                    data-i18n-placeholder="xzProKeyPlaceholder" maxlength="24">
+                <button id="xzov0efe-proApply" class="iconified dontshrink" type="button"><span class="fa-icon">unlock-alt</span><span data-i18n="xzProApply">Unlock</span><span class="hover"></span></button>
+                <button id="xzov0efe-proClear" class="iconified dontshrink" type="button" hidden><span class="fa-icon">cancel</span><span data-i18n="xzProClear">Remove key</span><span class="hover"></span></button>
+            </p>
+            <p id="xzov0efe-proMsg" role="status"></p>
+            <p>
+                <a id="xzov0efe-proBuy" href="https://zovo.one/pricing?utm_source=zovo-shield&utm_medium=extension&utm_campaign=upgrade&utm_content=dashboard" target="_blank" data-i18n="xzProBuy">Get a supporter key at zovo.one</a>
+            </p>
+        </div>
+        <p class="xzov0efe-note" data-i18n="xzProNote"></p>
+    </div>
+</section>
+
+<!-- -------- -->
 <section data-pane="about">
     <div class="body">
         <div id="aboutNameVer" class="li"></div>
         <div class="liul">
             <div class="li">Copyright (c) Raymond Hill 2014-present</div>
+            <div class="li">Zovo Shield modifications copyright (c) 2026 Zovo</div>
         </div>
-        <div class="li"><a href="https://github.com/uBlockOrigin/uBOL-home/wiki/Privacy-policy" data-i18n="aboutPrivacyPolicy"></a></div>
-        <div class="li"><a href="https://github.com/uBlockOrigin/uBOL-home/wiki" data-i18n="aboutDocumentation"></a></div>
-        <div class="li"><a href="https://github.com/uBlockOrigin/uBOL-home/releases" data-i18n="aboutChangelog"></a></div>
-        <div class="li"><a href="https://github.com/gorhill/uBlock" data-i18n="aboutCode"></a></div>
+        <div class="li"><span data-i18n="xzAboutForkLine"></span></div>
+        <div class="li"><a href="https://github.com/theluckystrike/zovo-shield" data-i18n="aboutCode"></a></div>
+        <div class="li"><a href="https://zovo.one/privacy-policy" data-i18n="aboutPrivacyPolicy"></a></div>
+        <div class="li"><a href="https://github.com/gorhill/uBlock" data-i18n="xzAboutUpstream"></a></div>
         <div class="li"><span data-i18n="aboutContributors"></span></div>
         <div class="liul">
             <div class="li"><a href="https://github.com/gorhill/uBlock/graphs/contributors" data-i18n="aboutSourceCode"></a></div>
@@ -283,6 +355,9 @@
 <script src="js/settings.js" type="module"></script>
 <script src="js/filter-manager-ui.js" type="module"></script>
 <script src="js/develop.js" type="module"></script>
+<script src="js/xz-digest.js" type="module"></script>
+<script src="js/xz-zaplib.js" type="module"></script>
+<script src="js/xz-pro.js" type="module"></script>
 
 </body>
 </html>

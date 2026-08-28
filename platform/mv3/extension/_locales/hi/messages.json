@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "एक प्रयोगात्मक, अनुमति-रहित सामग्री अवरोधक. इंस्टालेशन के तुरंत बाद विज्ञापनों, ट्रैकर्स, माइनर्स और बहुत कुछ को ब्लॉक कर देता है.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{filterCount}} नेटवर्क फ़िल्टर से रूपांतरित, {{ruleCount}} नियम",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — डैशबोर्ड",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "सेटिंग्स",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "विकास",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "जानकारी",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "गोपनीयता नीति",
@@ -103,10 +87,6 @@
     "message": "जोड़ने के लिए फ़िल्टर सूची का URL",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "आयात / निर्यात",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "जोड़ने के लिए विशिष्ट कॉस्मेटिक/स्क्रिप्टलेट फ़िल्टर",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "आयातित सूचियों से कॉस्मेटिक या स्क्रिप्टलेट फ़िल्टर लागू करने के लिए, आपको uBO Lite को उपयोगकर्ता स्क्रिप्ट चलाने की अनुमति देनी होगी। अपने ब्राउज़र का एक्सटेंशन पेज खोलें (Chrome में <code>chrome://extensions</code> या Firefox में <code>about:addons</code>), <b>uBO Lite</b> विवरण खोलें, और <b>उपयोगकर्ता स्क्रिप्ट की अनुमति दें</b> (जिसे \"असत्यापित तृतीय-पक्ष स्क्रिप्ट\" भी कहा जाता है) को चालू करें।",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "परिवर्तन पत्र",
@@ -187,16 +163,8 @@
     "message": "ओवरले या कोई अन्य दिक्कतें हैं",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "यह uBO Lite की पहचान करता है",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "गोपनीयता से संबंधित समस्याएं हैं",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "यह uBO Lite सक्षम होने पर ठीक से काम नहीं करता",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "फ़िल्टर-निर्माण सैंडबॉक्स",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "डेवलपर मोड",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "पृष्ठ ब्लॉक किया गया",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO लाईट ने इस पेज को लोड होने से रोक दिया हैं:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "पृष्ठ को {{listname}} में मेल खाते फ़िल्टर के कारण अवरुद्ध किया गया था.",

@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "An efficient content blocker. Blocks ads, trackers, miners, and more immediately upon installation.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} விதிகள், {{filterCount}} பிணைய வடிப்பான்களிலிருந்து மாற்றப்பட்டது",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — டாஷ்போர்டு",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "அமைப்புகள்",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "உருவாக்கு",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "பற்றி",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "தனியுரிமை கொள்கை",
@@ -103,10 +87,6 @@
     "message": "சேர்க்க வேண்டிய வடிப்பான் பட்டியலின் URL",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "இறக்குமதி / ஏற்றுமதி",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "சேர்க்க வேண்டிய குறிப்பிட்ட அழகியல்/ஸ்கிரிப்ட்லெட் வடிப்பான்கள்",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "இறக்குமதி செய்யப்பட்ட பட்டியல்களில் இருந்து அழகியல் அல்லது ஸ்கிரிப்ட்லெட் வடிப்பான்களை செயல்படுத்த, நீங்கள் uBO Lite க்கு பயனர் ஸ்கிரிப்ட்களை இயக்க அனுமதி வழங்க வேண்டும். உங்கள் உலாவியின் நீட்டிப்புகள் பக்கத்தைத் திறக்கவும் (Chrome இல் <code>chrome://extensions</code> அல்லது Firefox இல் <code>about:addons</code>), <b>uBO Lite</b> விவரங்களைத் திறக்கவும், மேலும் <b>பயனர் ஸ்கிரிப்ட்களை அனுமதி</b> (இது “சரிபார்க்கப்படாத மூன்றாம் தரப்பு ஸ்கிரிப்ட்கள்” என்றும் குறிப்பிடப்படுகிறது) என்பதை இயக்கவும்.",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "மாற்றப்பதிவேடு",
@@ -187,16 +163,8 @@
     "message": "மேலோட்டங்கள் அல்லது பிற சிரமங்களைக் கொண்டுள்ளது",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "uBO Lite ஐ கண்டறிகிறது",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "தனியுரிமை தொடர்பான சிக்கல்கள் உள்ளன",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "uBO Lite இயக்கப்பட்டிருக்கும் போது செயலிழக்கிறது",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "வடிப்பான் உருவாக்கும் மணல் பெட்டி (sandbox)",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "டெவலப்பர் முறை",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "பக்கம் தடுக்கப்பட்டது",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite பின்வரும் பக்கம் ஏற்றப்படுவதைத் தடுத்துள்ளது:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "{{listname}} இல் பொருந்திய வடிப்பான் காரணமாக பக்கம் தடுக்கப்பட்டது.",

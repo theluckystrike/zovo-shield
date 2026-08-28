@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "একটি পরীক্ষামূলক, অনুমতিহীন কন্টেন্ট নিষিদ্ধকারক। বিজ্ঞাপন, অনুসরণকারী, খননকারী, এবং আরো জিনিস নিষিদ্ধ করো ইন্সটলের সাথে সাথেই।",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} rules, converted from {{filterCount}} network filters",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — ড্যাশবোর্ড",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "সেটিংস",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "ডেভেলপ",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "সম্পর্কে",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "গোপনীয়তার নীতিমালা",
@@ -103,10 +87,6 @@
     "message": "যোগ করার জন্য ফিল্টার তালিকার URL",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "আমদানি / রপ্তানি",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "যোগ করার জন্য নির্দিষ্ট কসমেটিক/স্ক্রিপ্টলেট ফিল্টার",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "আমদানিকৃত তালিকা থেকে কসমেটিক বা স্ক্রিপ্টলেট ফিল্টার প্রয়োগ করতে, আপনাকে uBO Lite-কে ব্যবহারকারী স্ক্রিপ্ট চালানোর অনুমতি দিতে হবে। আপনার ব্রাউজারের এক্সটেনশন পৃষ্ঠা খুলুন (Chrome-এ <code>chrome://extensions</code> অথবা Firefox-এ <code>about:addons</code>), <b>uBO Lite</b>-এর বিস্তারিত খুলুন, এবং <b>Allow user scripts</b> (যা \"অযাচাইকৃত তৃতীয়-পক্ষ স্ক্রিপ্ট\" নামেও পরিচিত) চালু করুন।",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "পরিবর্তনসূচি",
@@ -187,16 +163,8 @@
     "message": "ওভারলে বা অন্যান্য উপদ্রব আছে",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "ইউবিও লাইট শনাক্ত করে",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "গোপনীয়তা-সম্পর্কিত সমস্যা আছে",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "ইউবিও লাইট চালু করলে সমস্যা হয়",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "ফিল্টার তৈরির স্যান্ডবক্স",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "ডেভেলপার মোড",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "পাতা অবরুদ্ধ",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "ইউবিও লাইট এই পাতা লোড হওয়া আটকিয়েছে:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "{{listname}} এর একটি ছাঁকনির জন্য এই পাতাটি অবরুদ্ধ করা হয়েছে।",

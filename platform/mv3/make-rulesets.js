@@ -1163,8 +1163,10 @@ async function rulesetFromURLs(assetDetails) {
 
 async function main() {
 
-    let version = '';
-    {
+    // Zovo Shield: ZS_VERSION env var pins a semver for store builds;
+    // otherwise fall back to the upstream date-based stamp.
+    let version = process.env.ZS_VERSION || '';
+    if ( version === '' ) {
         const now = new Date();
         const yearPart = now.getUTCFullYear();
         const monthPart = now.getUTCMonth() + 1;

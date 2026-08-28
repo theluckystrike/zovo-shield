@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "एक कार्यक्षम सामग्री ब्लॉकर. स्थापनेनंतर लगेच जाहिराती, ट्रॅकर्स, मायनर्स आणि बरेच काही अवरोधित करते.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{filterCount}} नेटवर्क फिल्टरमधून रूपांतरित {{ruleCount}} नियम",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — डॅशबोर्ड",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "सेटिंग्ज",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "विकसित करा",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "विषयी",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "गोपनीयता धोरण",
@@ -103,10 +87,6 @@
     "message": "जोडायच्या फिल्टर यादीचा URL",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "आयात / निर्यात",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "जोडायचे विशिष्ट कॉस्मेटिक/स्क्रिप्टलेट फिल्टर",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "आयात केलेल्या याद्यांमधील कॉस्मेटिक किंवा स्क्रिप्टलेट फिल्टर लागू करण्यासाठी, तुम्ही uBO Lite ला वापरकर्ता स्क्रिप्ट चालवण्याची परवानगी दिली पाहिजे. तुमच्या ब्राउझरचे विस्तारण पृष्ठ उघडा (Chrome मध्ये <code>chrome://extensions</code> किंवा Firefox मध्ये <code>about:addons</code>), <b>uBO Lite</b> तपशील उघडा, आणि <b>Allow user scripts</b> (ज्याला “unverified third-party scripts” असेही म्हणतात) टॉगल चालू करा.",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "बदल नोंदवही",
@@ -187,16 +163,8 @@
     "message": "ओव्हरले किंवा इतर त्रासदायक घटक आहेत",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "uBO Lite शोधते",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "गोपनीयता-संबंधित समस्या आहेत",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "uBO Lite सक्षम असताना कार्यात अडथळा येतो",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "फिल्टर-निर्मिती सँडबॉक्स",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "विकासक मोड",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "पृष्ठ अवरोधित",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite ने खालील पृष्ठ लोड होण्यापासून रोखले आहे:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "{{listname}} मधील जुळणाऱ्या फिल्टरमुळे पृष्ठ अवरोधित केले गेले.",

@@ -49,10 +49,18 @@ dom.on('#dashboard-nav', 'click', '.tabButton', ev => {
     }
 });
 
-localRead('dashboard.activePane').then(pane => {
-    if ( typeof pane !== 'string' ) { return; }
-    dom.body.dataset.pane = pane;
-});
+// Zovo Shield: honor ?pane=<name> deep links (digest notification, popup
+// shortcuts) before falling back to the persisted active pane.
+const zovoUrlPane = new URL(self.location.href).searchParams.get('pane');
+if ( typeof zovoUrlPane === 'string' && zovoUrlPane !== '' ) {
+    dom.body.dataset.pane = zovoUrlPane;
+    localWrite('dashboard.activePane', zovoUrlPane);
+} else {
+    localRead('dashboard.activePane').then(pane => {
+        if ( typeof pane !== 'string' ) { return; }
+        dom.body.dataset.pane = pane;
+    });
+}
 
 // Update troubleshooting on-demand
 const tsinfoObserver = new IntersectionObserver(entries => {

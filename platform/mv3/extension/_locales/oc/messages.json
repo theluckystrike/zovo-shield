@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "Un blocaire de contengut eficient. Bloca las publicitats, los traçaires, los minaires, e mai, immediatament après l'installacion.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} règlas, convertits dempuèi {{filterCount}} filtres ret",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — Tablèu de bòrd",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "Paramètres",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "Desvolopar",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "A prepaus",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "Politica de confidencialitat",
@@ -103,10 +87,6 @@
     "message": "URL de la lista de filtres d'apondre",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "Importar / Exportar",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "Filtres cosmetics/scriptlets especifics d'apondre",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "Per aplicar los filtres cosmetics o scriptlets de las listas importadas, deuatz acordar la permission a uBO Lite d'executar d'scripts utilizaire. Dobrissètz la pagina de las extensions de vòstre navigador (<code>chrome://extensions</code> dins Chrome o <code>about:addons</code> dins Firefox), dobrissètz los detalhs de <b>uBO Lite</b>, e activatz <b>Permetre los scripts utilizaire</b> (tanben nomenats “scripts tèrces pas verificats”).",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "Jornal dels cambiaments",
@@ -187,16 +163,8 @@
     "message": "A de subrecobriments o d'autras nusenças",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "Detecta uBO Lite",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "A de problèmas ligats a la confidencialitat",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "Malaise quand uBO Lite es activat",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "Bac de sable de creacion de filtres",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "Mòde desvolopaire",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "Pagina blocada",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite a empachat la pagina seguenta de se cargar:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "La pagina es estada blocada a causa d'un filtre correspondent dins {{listname}}.",

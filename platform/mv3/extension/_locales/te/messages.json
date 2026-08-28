@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "ఒక సమర్థవంతమైన కంటెంట్ బ్లాకర్. ప్రకటనలు, ట్రాకర్లు, మైనర్లు మరియు మరిన్నింటిని ఇన్‌స్టాల్ చేసిన వెంటనే బ్లాక్ చేస్తుంది.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} నియమాలు, {{filterCount}} నెట్‌వర్క్ ఫిల్టర్ల నుండి మార్చబడ్డాయి",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — డాష్‌బోర్డ్",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "ఐచ్చికాలు",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "అభివృద్ధి",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "మా గురించి",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "గోప్యతా",
@@ -103,10 +87,6 @@
     "message": "జోడించవలసిన ఫిల్టర్ జాబితా యొక్క URL",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "దిగుమతి / ఎగుమతి",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "జోడించడానికి నిర్దిష్ట కాస్మెటిక్/స్క్రిప్ట్‌లెట్ ఫిల్టర్లు",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "దిగుమతి చేసిన జాబితాల నుండి కాస్మెటిక్ లేదా స్క్రిప్ట్‌లెట్ ఫిల్టర్లను అమలు చేయడానికి, మీరు uBO Liteకి యూజర్ స్క్రిప్ట్‌లను అమలు చేసే అనుమతిని ఇవ్వాలి. మీ బ్రౌజర్ యొక్క ఎక్స్‌టెన్షన్ పేజీని తెరవండి (<code>chrome://extensions</code> Chromeలో లేదా <code>about:addons</code> Firefoxలో), <b>uBO Lite</b> వివరాలను తెరవండి, మరియు <b>Allow user scripts</b> (లేదా “unverified third-party scripts” అని కూడా పిలుస్తారు) టోగుల్ చేయండి.",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "మార్పుల చరిత్ర",
@@ -187,16 +163,8 @@
     "message": "ఓవర్లేలు లేదా ఇతర అసౌకర్యాలు ఉన్నాయి",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "uBO Liteను గుర్తిస్తుంది",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "గోప్యత-సంబంధిత సమస్యలు ఉన్నాయి",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "uBO Lite ప్రారంభించబడినప్పుడు పనిచేయకపోవడం",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "ఫిల్టర్-సృష్టి శాండ్‌బాక్స్",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "డెవలపర్ మోడ్",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "పేజీ నిరోధించబడింది",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite కింది పేజీని లోడ్ కాకుండా నిరోధించింది:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "{{listname}}లో సరిపోలే ఫిల్టర్ కారణంగా పేజీ నిరోధించబడింది.",

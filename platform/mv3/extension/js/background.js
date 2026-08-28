@@ -122,6 +122,7 @@ import {
 
 import {
     processDueJobs,
+    registerJob,
     resetJobsAlarm,
 } from './alarms.js';
 
@@ -135,10 +136,34 @@ import { setPopupBlockMode } from './prevent-popup.js';
 import { supportsOffscreenDocument } from './ext-offscreen.js';
 import { toggleToolbarIcon } from './action.js';
 
+// Zovo Shield: local-only stats, digest, and feature modules (GPL-3.0 fork;
+// see ZOVONOTICE.md). zs-stats.js registers its network event listeners at
+// module evaluation so the service worker is woken for them.
+import {
+    getDigestData,
+    getSiteStats,
+    housekeeping as zsHousekeeping,
+    initStatsHousekeeping,
+    initStatsNotifications,
+    rearmWeeklyDigest,
+    weeklyDigestDue,
+} from './xz-stats.js';
+
+import {
+    applyLicenseKey,
+    clearLicense,
+    getLicenseStatus,
+    registerLicenseAlarm,
+} from './xz-licence.js';
+
 /******************************************************************************/
 
 const UBOL_ORIGIN = runtime.getURL('').replace(/\/$/, '').toLowerCase();
 const canShowBlockedCount = typeof dnr.setExtensionActionOptions === 'function';
+
+// Zovo Shield: DNR rulesets toggled by the one-click cookie-banner
+// auto-decline control (see zsCookieDeclineGet/Set message handlers).
+const ZOVO_COOKIE_RULESETS = [ 'annoyances-cookies', 'annoyances-overlays' ];
 
 let pendingPermissionRequest;
 
@@ -681,6 +706,57 @@ async function onMessage(request, sender) {
     case 'keepAlive':
         return;
 
+    // Zovo Shield feature endpoints (local data only).
+
+    case 'zsSiteStats':
+        return getSiteStats(request.hostname);
+
+    case 'zsDigestData':
+        return getDigestData(false);
+
+    case 'zsDigestRegenerate':
+        return getDigestData(true);
+
+    case 'zsWeeklyDigestDue':
+        await weeklyDigestDue();
+        return rearmWeeklyDigest(registerJob);
+
+    case 'zsRearmWeeklyDigest':
+        return rearmWeeklyDigest(registerJob);
+
+    case 'zsHousekeeping':
+        return zsHousekeeping();
+
+    case 'zsCookieDeclineGet': {
+        const enabled = await getEnabledRulesets();
+        return {
+            state: ZOVO_COOKIE_RULESETS.every(id => enabled.includes(id)),
+            available: true,
+        };
+    }
+
+    case 'zsCookieDeclineSet': {
+        const enabled = await getEnabledRulesets();
+        const set = new Set(enabled);
+        if ( request.state ) {
+            for ( const id of ZOVO_COOKIE_RULESETS ) { set.add(id); }
+        } else {
+            for ( const id of ZOVO_COOKIE_RULESETS ) { set.delete(id); }
+        }
+        await applyRulesets(Array.from(set));
+        return { state: request.state === true };
+    }
+
+    case 'zsLicenseStatus':
+        return getLicenseStatus();
+
+    case 'zsLicenseApply':
+        return applyLicenseKey(request.key);
+
+    case 'zsLicenseClear':
+        await clearLicense();
+        return { pro: false };
+
     default:
         break;
     }
@@ -840,6 +916,11 @@ async function start() {
     }
 
     toggleDeveloperMode(rulesetConfig.developerMode);
+
+    // Zovo Shield: digest notifications + stats housekeeping/flush timers.
+    initStatsNotifications(gotoURL);
+    initStatsHousekeeping(onMessage);
+    registerLicenseAlarm();
 }
 
 /******************************************************************************/

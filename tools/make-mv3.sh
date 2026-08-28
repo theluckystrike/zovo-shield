@@ -161,13 +161,31 @@ rm -rf "$UBOL_BUILD_DIR"
 echo "*** uBOLite.$PLATFORM: extension ready"
 echo "Extension location: $UBOL_DIR/"
 
+# Zovo Shield: the supporter-unlock module must carry an inline publishable
+# Supabase anon key — a missing/placeholder key would silently kill the paid
+# tier offline, so fail the build loudly instead (licence layer 5.95).
+# An optional SUPABASE_ANON_KEY env var overrides the inline literal.
+if [ -f "$UBOL_DIR"/js/xz-licence.js ]; then
+    if [ -n "$SUPABASE_ANON_KEY" ]; then
+        tmp_licence=$(mktemp)
+        sed "s/sb_publishable_[A-Za-z0-9_]*/$SUPABASE_ANON_KEY/" \
+            "$UBOL_DIR"/js/xz-licence.js > "$tmp_licence" \
+            && mv "$tmp_licence" "$UBOL_DIR"/js/xz-licence.js
+    fi
+    if ! grep -q "sb_publishable_[A-Za-z0-9_]\{20,\}" "$UBOL_DIR"/js/xz-licence.js; then
+        echo "*** ERROR: js/xz-licence.js has no inline sb_publishable_ anon key" >&2
+        echo "*** Set SUPABASE_ANON_KEY in js/xz-licence.js before building." >&2
+        exit 1
+    fi
+fi
+
 # Local build
 tmp_manifest=$(mktemp)
 chmod '=rw' "$tmp_manifest"
 if [ -z "$TAGNAME" ]; then
     TAGNAME="$(jq -r .version "$UBOL_DIR"/manifest.json)"
     # Enable DNR rule debugging
-    jq '.permissions += ["declarativeNetRequestFeedback"]' \
+    jq '.permissions |= (. + ["declarativeNetRequestFeedback"] | unique)' \
         "$UBOL_DIR/manifest.json" > "$tmp_manifest" \
         && mv "$tmp_manifest" "$UBOL_DIR/manifest.json"
     # Use a different extension id than the official one

@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "ایک تجرباتی، اجازت سے کم مواد بلاکر۔ انسٹال ہونے پر اشتہارات، ٹریکرز، کان کنوں اور مزید کو فوری طور پر روکتا ہے۔",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} rules, converted from {{filterCount}} network filters",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "یو بلاکر لائٹ-ڈیش بورڈ",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "ترتیبات",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "ڈیولپ",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "تعارف",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "پرائیویسی پالیسی",
@@ -103,10 +87,6 @@
     "message": "شامل کرنے کے لیے فلٹر لسٹ کا URL",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "درآمد / برآمد",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "شامل کرنے کے لیے مخصوص کاسمیٹک/اسکرپٹلیٹ فلٹرز",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "درآمد شدہ فہرستوں سے کاسمیٹک یا اسکرپٹلیٹ فلٹرز کو نافذ کرنے کے لیے، آپ کو uBO Lite کو صارف اسکرپٹس چلانے کی اجازت دینی ہوگی۔ اپنے براؤزر کے ایکسٹینشنز پیج (<code>chrome://extensions</code> Chrome میں یا <code>about:addons</code> Firefox میں) کو کھولیں، <b>uBO Lite</b> کی تفصیلات کھولیں، اور <b>Allow user scripts</b> کو آن کریں (جسے “unverified third-party scripts” بھی کہا جاتا ہے)۔",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "چینج لاگ",
@@ -187,16 +163,8 @@
     "message": "اوورلے یا دیگر پریشانیاں ہیں",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "uBO Lite کا پتہ لگاتا ہے",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "رازداری سے متعلق مسائل ہیں",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "جب uBO Lite فعال ہو تو خرابی پیدا کرتا ہے",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "فلٹر تخلیق سینڈ باکس",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "ڈویلپر موڈ",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "صفحہ مسدود ہے",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite نے درج ذیل صفحہ کو لوڈ ہونے سے روک دیا ہے:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "صفحہ {{listname}} میں مماثل فلٹر کی وجہ سے مسدود کیا گیا تھا۔",

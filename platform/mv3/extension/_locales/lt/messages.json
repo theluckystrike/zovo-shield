@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "Veiksmingas turinio blokatorius. Iškart po įdiegimo blokuoja skelbimus, sekimo priemones, kriptovaliutų kasėjus ir dar daugiau.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} taisyklės, konvertuotos iš {{filterCount}} tinklo filtrų",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — Skydelis",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "Nustatymai",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "Kūrimas",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "Apie",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "Privatumo politika",
@@ -103,10 +87,6 @@
     "message": "Pridedamo filtrų sąrašo URL",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "Importuoti / Eksportuoti",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "Konkretūs kosmetiniai / scenarijų filtrai, kuriuos norite pridėti",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "Kad galėtumėte taikyti kosmetinius ar scenarijų filtrus iš importuotų sąrašų, turite suteikti uBO Lite leidimą vykdyti vartotojo scenarijus. Atidarykite naršyklės plėtinių puslapį (<code>chrome://extensions</code> sistemoje Chrome arba <code>about:addons</code> sistemoje Firefox), atidarykite <b>uBO Lite</b> išsamią informaciją ir įjunkite <b>Leisti vartotojo scenarijus</b> (taip pat vadinama „nepatikrintais trečiųjų šalių scenarijais“).",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "Pakeitimų žurnalas",
@@ -187,16 +163,8 @@
     "message": "Turi perdangas ar kitus trukdžius",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "Aptinka uBO Lite",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "Turi su privatumu susijusių problemų",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "Veikia netinkamai, kai įjungtas uBO Lite",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "Filtrų kūrimo smėlio dėžė",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "Kūrėjo režimas",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "Puslapis užblokuotas",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite neleido įkelti šio puslapio:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "Puslapis buvo užblokuotas dėl atitinkančio filtro sąraše {{listname}}.",

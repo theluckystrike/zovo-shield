@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "Účinný blokátor obsahu. Okamžitě po instalaci blokuje reklamy, sledovače, těžaře a další.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} pravidel, převedeno z {{filterCount}} síťových filtrů",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite - Ovládací panel",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "Nastavení",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "Vývoj",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "O rozšíření",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "Zásady ochrany osobních údajů",
@@ -103,10 +87,6 @@
     "message": "Sem vložte adresu URL seznamu filtrů, které chcete přidat",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "Chcete-li použít filtry vzhledu nebo skriptové filtry z importovaných seznamů, musíte uBO Lite udělit oprávnění ke spouštění uživatelských skriptů.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "Import / Export",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "Sem vložte konkrétní kosmetické/scriplet filtry, které chcete přidat",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "Otevřete stránku s rozšířeními ve svém prohlížeči (<code>chrome://extensions</code> v prohlížeči Chrome nebo <code>about:addons</code> v prohlížeči Firefox), otevřete podrobnosti o rozšíření <b>uBO Lite</b> a zapněte volbu <b>Povolit uživatelské skripty</b> (také označované jako \"neověřené skripty třetích stran\").",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "Přehled změn",
@@ -187,16 +163,8 @@
     "message": "Je překrytá nebo má jiné nedostatky",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "Detekuje uBO Lite",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "Má problémy související se soukromím",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "Je rozbitá, když je povolen uBO Lite",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "Testovací prostředí pro vytváření filtrů",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "Chcete-li v sandboxu aktivovat filtry vzhledu nebo skriptové filtry, musíte uBO Lite udělit oprávnění ke spouštění uživatelských skriptů.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "Vývojářský režim",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "Stránka byla zablokována",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite zabránil načtení následující stránky:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "Stránka byla zablokována z důvodu shodného filtru v {{listname}}.",

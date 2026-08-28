@@ -44,11 +44,14 @@
     "activeTab",
     "alarms",
     "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "notifications",
     "offscreen",
     "scripting",
     "storage",
     "unlimitedStorage",
-    "userScripts"
+    "userScripts",
+    "webRequest"
   ],
   "short_name": "uBO Lite",
   "storage": {

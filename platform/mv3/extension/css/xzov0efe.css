@@ -1,0 +1,304 @@
+/*
+    Zovo Shield - a comprehensive, MV3-compliant content blocker
+    Copyright (C) 2026-present Zovo
+
+    This file is part of Zovo Shield, a fork of uBlock Origin Lite
+    (https://github.com/gorhill/uBlock), and is a modification of the
+    upstream project. See ZOVONOTICE.md for the statement of changes.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see {http://www.gnu.org/licenses/}.
+
+    ---
+
+    Styles for Zovo Shield popup extras (privacy score card, cookie-banner
+    auto-decline toggle, digest + supporter links) and dashboard panes
+    (digest, zap library, supporter). Theme variables come from the
+    upstream default.css so light/dark themes keep working.
+*/
+
+:root {
+    --xzov0efe-grade-a: #1a7f37;
+    --xzov0efe-grade-b: #4c7a17;
+    --xzov0efe-grade-c: #9a6700;
+    --xzov0efe-grade-d: #b35900;
+    --xzov0efe-grade-f: #cf222e;
+}
+
+/* Zovo identity: hue-110 green accent scale, replacing the upstream blue
+   (h255) scale. Lightness steps mirror the upstream ramp so light/dark
+   themes keep their contrast relationships. Brand stops: #52d039 (60),
+   #76da62 (70), #9ae48b (80), #f1fbee (95). */
+:root {
+    --primary-5:  10 24 7;
+    --primary-10: 18 40 12;
+    --primary-20: 28 66 18;
+    --primary-30: 38 96 24;
+    --primary-40: 47 125 30;
+    --primary-50: 61 165 38;
+    --primary-60: 82 208 57;
+    --primary-70: 118 218 98;
+    --primary-80: 154 228 139;
+    --primary-90: 227 249 220;
+    --primary-95: 241 251 238;
+}
+
+/* ---------------------------------------------------------------- popup */
+
+#xzov0efe-scorecard {
+    border-bottom: 1px solid var(--surface-2);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: var(--popup-gap-thin, 6px) var(--popup-gap-extra-thin, 3px);
+}
+:root:not(.isHTTP) #xzov0efe-scorecard {
+    display: none;
+}
+#xzov0efe-scorecard[data-state="unavailable"] .xzov0efe-toptrackers {
+    display: none;
+}
+
+.xzov0efe-score-main {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    padding: 0 6px;
+}
+
+.xzov0efe-grade {
+    align-items: center;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-flex;
+    flex: 0 0 auto;
+    font-size: 20px;
+    font-weight: 700;
+    height: 40px;
+    justify-content: center;
+    min-width: 40px;
+    background-color: var(--surface-3);
+}
+.xzov0efe-grade[data-grade="Aplus"],
+.xzov0efe-grade[data-grade="A"] { background-color: var(--xzov0efe-grade-a); }
+.xzov0efe-grade[data-grade="B"] { background-color: var(--xzov0efe-grade-b); }
+.xzov0efe-grade[data-grade="C"] { background-color: var(--xzov0efe-grade-c); }
+.xzov0efe-grade[data-grade="D"] { background-color: var(--xzov0efe-grade-d); }
+.xzov0efe-grade[data-grade="F"] { background-color: var(--xzov0efe-grade-f); }
+
+.xzov0efe-score-lines {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+#xzov0efe-score-title {
+    font-size: 95%;
+    font-weight: 600;
+}
+#xzov0efe-score-detail {
+    color: var(--ink-2);
+    font-size: var(--font-size-smaller);
+}
+.xzov0efe-toptrackers {
+    color: var(--ink-3);
+    font-size: var(--font-size-xsmall);
+    overflow: hidden;
+    padding: 0 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.xzov0efe-toptrackers:not(:empty) {
+    margin-top: 2px;
+}
+
+.xzov0efe-toggle {
+    align-self: center;
+    border: 1px solid var(--surface-3);
+    border-radius: 8px;
+    color: var(--ink-2);
+    flex: 0 0 auto;
+    font-size: var(--font-size-xsmall);
+    margin-inline-end: 6px;
+    padding: 1px 8px;
+    text-transform: uppercase;
+}
+.xzov0efe-toggle[data-state="on"] {
+    background-color: var(--accent-surface-1, var(--xzov0efe-grade-a));
+    border-color: transparent;
+    color: #fff;
+}
+
+/* ------------------------------------------------------------- dashboard */
+
+section[data-pane="digest"] .xzov0efe-kpis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 12px 0;
+}
+section[data-pane="digest"] .xzov0efe-kpi {
+    background-color: var(--surface-1);
+    border: 1px solid var(--surface-2);
+    border-radius: 8px;
+    min-width: 140px;
+    padding: 12px 16px;
+}
+section[data-pane="digest"] .xzov0efe-kpi .value {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+}
+section[data-pane="digest"] .xzov0efe-kpi .label {
+    color: var(--ink-2);
+    font-size: var(--font-size-smaller);
+}
+
+.xzov0efe-table {
+    border-collapse: collapse;
+    margin: 8px 0 16px;
+    width: 100%;
+}
+.xzov0efe-table th,
+.xzov0efe-table td {
+    border-bottom: 1px solid var(--surface-2);
+    padding: 6px 10px;
+    text-align: start;
+}
+.xzov0efe-table th {
+    color: var(--ink-2);
+    font-size: var(--font-size-smaller);
+    font-weight: 600;
+}
+.xzov0efe-table td.numeric,
+.xzov0efe-table th.numeric {
+    text-align: end;
+}
+
+.xzov0efe-bar-row {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    margin: 4px 0;
+}
+.xzov0efe-bar-row .day {
+    color: var(--ink-2);
+    flex: 0 0 84px;
+    font-size: var(--font-size-smaller);
+}
+.xzov0efe-bar-row .bar {
+    background-color: var(--accent-surface-1, #4a7ddb);
+    border-radius: 3px;
+    height: 10px;
+    min-width: 2px;
+}
+.xzov0efe-bar-row .count {
+    color: var(--ink-2);
+    font-size: var(--font-size-xsmall);
+}
+
+.xzov0efe-section-title {
+    font-size: 105%;
+    font-weight: 600;
+    margin: 18px 0 6px;
+}
+
+section[data-pane="zaplib"] .xzov0efe-pack {
+    border: 1px solid var(--surface-2);
+    border-radius: 8px;
+    margin: 8px 0;
+    padding: 10px 14px;
+}
+section[data-pane="zaplib"] .xzov0efe-pack .pack-head {
+    align-items: baseline;
+    display: flex;
+    gap: 10px;
+}
+section[data-pane="zaplib"] .xzov0efe-pack .pack-name {
+    font-weight: 600;
+}
+section[data-pane="zaplib"] .xzov0efe-pack .pack-sites {
+    color: var(--ink-3);
+    font-size: var(--font-size-xsmall);
+}
+section[data-pane="zaplib"] .xzov0efe-pack .pack-desc {
+    color: var(--ink-2);
+    font-size: var(--font-size-smaller);
+    margin: 4px 0 8px;
+}
+section[data-pane="zaplib"] .xzov0efe-pack .pack-actions {
+    display: flex;
+    gap: 8px;
+}
+.xzov0efe-badge-pro {
+    background-color: var(--dashboard-highlight-surface, #e8ddfb);
+    border-radius: 6px;
+    color: var(--ink-1);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 2px 6px;
+    text-transform: uppercase;
+}
+
+/* Pro pane (dashboard) */
+section[data-pane="pro"] .xzov0efe-procard {
+    border: 1px solid var(--surface-2);
+    border-radius: 10px;
+    margin: 8px 0;
+    max-width: 40em;
+    padding: 14px 16px;
+}
+section[data-pane="pro"] .xzov0efe-prostatus {
+    align-items: baseline;
+    display: flex;
+    gap: 8px;
+}
+section[data-pane="pro"] .xzov0efe-badge {
+    background-color: var(--surface-2);
+    border-radius: 6px;
+    color: var(--ink-2);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 2px 6px;
+    text-transform: uppercase;
+}
+section[data-pane="pro"] .xzov0efe-badge[data-state="pro"] {
+    background-color: #f59e0b;
+    color: #1c1005;
+}
+section[data-pane="pro"] .xzov0efe-properks {
+    margin: 10px 0;
+    padding-inline-start: 1.2em;
+}
+section[data-pane="pro"] .xzov0efe-properks li {
+    color: var(--ink-2);
+    font-size: var(--font-size-smaller);
+    margin: 2px 0;
+}
+section[data-pane="pro"] #xzov0efe-proKey {
+    box-sizing: border-box;
+    font-family: monospace;
+    margin-inline-end: 8px;
+    max-width: 22em;
+    padding: 6px 8px;
+    width: 100%;
+}
+section[data-pane="pro"] #xzov0efe-proKeyRow.pro #xzov0efe-proKey {
+    display: none;
+}
+section[data-pane="pro"] #xzov0efe-proMsg {
+    color: var(--ink-2);
+    font-size: var(--font-size-smaller);
+    min-height: 1em;
+}

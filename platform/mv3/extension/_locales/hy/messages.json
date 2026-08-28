@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "Փբովանդակության արգելափակիչ, որը չի պահանջում թույլտվություններ։ Արգելափակում է ազդերը, հետագծիչները, մայներները և շատ ավելին։",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} կանոն, որոնք փոխարկված են {{filterCount}} ցանցային զտիչներից",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — Կառավահան",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "Կարգավորումներ",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "Մշակել",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "Ընդլայնման մասին",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "Գաղտնիության քաղաքականություն",
@@ -103,10 +87,6 @@
     "message": "Ավելացման ենթակա զտիչների ցանկի URL-ը",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "Ներմուծում / Արտահանում",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "Ավելացման ենթակա հատուկ կոսմետիկ/սկրիպտլետ զտիչներ",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "Ներմուծված ցանկերից կոսմետիկ կամ սկրիպտլետ զտիչները կիրառելու համար դուք պետք է uBO Lite-ին թույլատրեք գործարկել օգտատիրոջ սկրիպտները։ Բացեք ձեր դիտարկչի ընդլայնումների էջը (<code>chrome://extensions</code> Chrome-ում կամ <code>about:addons</code> Firefox-ում), բացեք <b>uBO Lite</b>-ի մանրամասները և միացրեք <b>Թույլատրել օգտատիրոջ սկրիպտները</b> (նաև կոչվում է “չստուգված երրորդ կողմի սկրիպտներ”)։",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "Փոփոխությունների մատյան",
@@ -187,16 +163,8 @@
     "message": "Ունի ծածկույթներ կամ այլ անհարմարություններ",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "Հայտնաբերում է uBO Lite-ը",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "Ունի գաղտնիության հետ կապված խնդիրներ",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "Խափանվում է, երբ uBO Lite-ը միացված է",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "Զտիչների ստեղծման ավազարկղ",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "Մշակողի ռեժիմ",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "Էջն արգելափակված է",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite-ը կանխել է հետևյալ էջի բեռնումը՝",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "Էջն արգելափակվել է {{listname}}-ում համապատասխան զտիչի պատճառով։",

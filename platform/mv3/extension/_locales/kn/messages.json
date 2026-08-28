@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "ಅನುಮತಿ-ಕಡಿಮೆ ವಿಷಯ ಬ್ಲಾಕರ್. ಅನುಸ್ಥಾಪನೆಯ ತಕ್ಷಣವೇ ಜಾಹೀರಾತುಗಳು, ಟ್ರ್ಯಾಕರ್‌ಗಳು, ಗಣಿಗಾರರು ಮತ್ತು ಹೆಚ್ಚಿನದನ್ನು ನಿರ್ಬಂಧಿಸುತ್ತದೆ.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} ನಿಯಮಗಳು, {{filterCount}} ಜಾಲ ಶೋಧಕಗಳಿಂದ ಪರಿವರ್ತಿಸಲಾಗಿದೆ",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "\nಯುಬಿಒ ಲೈಟ್ - ಡ್ಯಾಶ್‌ಬೋರ್ಡ್\n",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "ಸಂಯೋಜನೆಗಳು",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "ಅಭಿವೃದ್ಧಿಪಡಿಸು",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "ಬಗ್ಗೆ",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "ಗೌಪ್ಯತಾ ನೀತಿ\n",
@@ -103,10 +87,6 @@
     "message": "ಸೇರಿಸಬೇಕಾದ ಶೋಧಕ ಪಟ್ಟಿಯ URL",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "ಆಮದು / ರಫ್ತು",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "ಸೇರಿಸಬೇಕಾದ ನಿರ್ದಿಷ್ಟ ಸೌಂದರ್ಯ/ಸ್ಕ್ರಿಪ್ಟ್ಲೆಟ್ ಶೋಧಕಗಳು",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "ಆಮದು ಮಾಡಿದ ಪಟ್ಟಿಗಳಿಂದ ಸೌಂದರ್ಯ ಅಥವಾ ಸ್ಕ್ರಿಪ್ಟ್ಲೆಟ್ ಶೋಧಕಗಳನ್ನು ಜಾರಿಗೊಳಿಸಲು, ನೀವು uBO Lite ಗೆ ಬಳಕೆದಾರ ಸ್ಕ್ರಿಪ್ಟ್ಗಳನ್ನು ಚಲಾಯಿಸಲು ಅನುಮತಿ ನೀಡಬೇಕು. ನಿಮ್ಮ ಬ್ರೌಸರ್ನ ವಿಸ್ತರಣೆಗಳ ಪುಟವನ್ನು ತೆರೆಯಿರಿ (Chrome ನಲ್ಲಿ <code>chrome://extensions</code> ಅಥವಾ Firefox ನಲ್ಲಿ <code>about:addons</code>), <b>uBO Lite</b> ವಿವರಗಳನ್ನು ತೆರೆಯಿರಿ, ಮತ್ತು <b>ಬಳಕೆದಾರ ಸ್ಕ್ರಿಪ್ಟ್ಗಳನ್ನು ಅನುಮತಿಸು</b> ಅನ್ನು ಟಾಗಲ್ ಆನ್ ಮಾಡಿ (ಇದನ್ನು “ಪರಿಶೀಲಿಸದ ಮೂರನೇ-ಪಕ್ಷ ಸ್ಕ್ರಿಪ್ಟ್ಗಳು” ಎಂದೂ ಕರೆಯಲಾಗುತ್ತದೆ).",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "ಬದಲಾವಣೆಗಳು",
@@ -187,16 +163,8 @@
     "message": "ಓವರ್ಲೇಗಳು ಅಥವಾ ಇತರ ತೊಂದರೆಗಳನ್ನು ಹೊಂದಿದೆ",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "uBO Lite ಅನ್ನು ಪತ್ತೆ ಮಾಡುತ್ತದೆ",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "ಗೌಪ್ಯತೆ-ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳನ್ನು ಹೊಂದಿದೆ",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "uBO Lite ಸಕ್ರಿಯವಾಗಿರುವಾಗ ಅಸಮರ್ಪಕವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "ಶೋಧಕ-ರಚನೆ ಸ್ಯಾಂಡ್ಬಾಕ್ಸ್",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "ಡೆವಲಪರ್ ಮೋಡ್",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "ಪುಟ ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite ಈ ಕೆಳಗಿನ ಪುಟವನ್ನು ಲೋಡ್ ಆಗದಂತೆ ತಡೆದಿದೆ:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "{{listname}} ನಲ್ಲಿ ಹೊಂದಾಣಿಕೆಯ ಶೋಧಕದ ಕಾರಣದಿಂದ ಪುಟವನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ.",

@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "一個無須授權的內容封鎖器。安裝後即可立即封鎖廣告、追蹤器、挖礦程式等等。",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} 條規則，由 {{filterCount}} 條網路過濾規則轉換而來",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — 控制台",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "設定",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "開發",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "關於",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "隱私權政策",
@@ -103,10 +87,6 @@
     "message": "要添加的過濾清單url",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "若要套用從匯入清單中的樣式或小令稿過濾規則，您必須授予 uBO Lite 執行使用者命令稿的權限。",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "匯入 / 匯出",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "在這裡貼上要新增的元素隱藏篩選規則",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "請開啟瀏覽器的擴充功能頁面（Chrome 中輸入 chrome://extensions，Firefox 中輸入 about:addons），開啟 uBO Lite 的詳細資料，並啟用允許使用者腳本（亦稱為『未經驗證的第三方腳本』）。",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "變更日誌",
@@ -187,16 +163,8 @@
     "message": "有覆蓋層或其他干擾",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "偵測到 uBO Lite",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "有隱私相關問題",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "在 uBO Lite 啟用時運作異常",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "篩選規則建立沙盒",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "若要在沙盒中套用外觀或小令稿過濾規則，您必須授予 uBO Lite 執行使用者命令稿的權限。",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "開發人員模式",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "已封鎖頁面",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "uBO Lite 已防止下列頁面載入：",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "由於符合 {{listname}} 中的過濾規則，此頁面已被封鎖。",

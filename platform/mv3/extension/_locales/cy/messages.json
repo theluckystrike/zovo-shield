@@ -1,19 +1,7 @@
 {
-  "extName": {
-    "message": "uBlock Origin Lite",
-    "description": "extension name."
-  },
-  "extShortDesc": {
-    "message": "Rhwystrydd cynnwys nad yw'n gofyn am hawliau. Rhwystrwch hysbysebion, tracwyr, cloddwyr, a mwy, yn syth ar ôl gosod.",
-    "description": "this will be in the Chrome web store: must be 132 characters or less"
-  },
   "perRulesetStats": {
     "message": "{{ruleCount}} rheol, wedi'u trosi o {{filterCount}} hidl rhwydwaith",
     "description": "Appears aside each filter list in the _3rd-party filters_ pane"
-  },
-  "dashboardName": {
-    "message": "uBO Lite — Dangosfwrdd",
-    "description": "English: uBO Lite — Dashboard"
   },
   "settingsPageName": {
     "message": "Gosodiadau",
@@ -26,10 +14,6 @@
   "developPageName": {
     "message": "Datblygu",
     "description": "appears as tab name in dashboard. Inspired from 'Develop' menu in Safari, see https://developer.apple.com/documentation/safari-developer-tools/develop-menu"
-  },
-  "aboutPageName": {
-    "message": "Ynghylch",
-    "description": "appears as tab name in dashboard"
   },
   "aboutPrivacyPolicy": {
     "message": "Polisi preifatrwydd",
@@ -103,10 +87,6 @@
     "message": "URL y rhestr hidl i'w hychwanegu",
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
-  "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "customFiltersImportExportLabel": {
     "message": "Mewnforio / Allforio",
     "description": "Text label heading the import/export area of custom filters"
@@ -114,10 +94,6 @@
   "customFiltersImportTextareaPlaceholder": {
     "message": "Hidlau cosmetig/sgriptlet penodol i'w hychwanegu",
     "description": "Placeholder text which describes the purpose of the textarea widget"
-  },
-  "userScriptsInfo": {
-    "message": "I orfodi hidlau cosmetig neu sgriptlet o restrau wedi'u mewnforio, rhaid i chi roi caniatâd i uBO Lite redeg sgriptiau defnyddiwr. Agorwch dudalen estyniadau eich porwr (<code>chrome://extensions</code> yn Chrome neu <code>about:addons</code> yn Firefox), agorwch fanylion <b>uBO Lite</b>, a throwch <b>Caniatáu sgriptiau defnyddiwr</b> ymlaen (a elwir hefyd yn “sgriptiau trydydd parti heb eu gwirio”).",
-    "description": "A notice to inform user on how to enable 'user scripts' permission"
   },
   "aboutChangelog": {
     "message": "Cofnod newidiadau",
@@ -187,16 +163,8 @@
     "message": "Mae gorgysylltiadau neu niwsansau eraill",
     "description": "An entry in the widget used to select the type of issue"
   },
-  "supportS6Select1Option3": {
-    "message": "Yn canfod uBO Lite",
-    "description": "An entry in the widget used to select the type of issue"
-  },
   "supportS6Select1Option4": {
     "message": "Mae materion sy'n ymwneud â phreifatrwydd",
-    "description": "An entry in the widget used to select the type of issue"
-  },
-  "supportS6Select1Option5": {
-    "message": "Yn camweithio pan fydd uBO Lite wedi'i alluogi",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -291,10 +259,6 @@
     "message": "Blwch tywod creu hidl",
     "description": "Header for filter-creation section in the dashboard"
   },
-  "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant uBO Lite permission to run user scripts.",
-    "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
-  },
   "developerModeLabel": {
     "message": "Modd datblygwr",
     "description": "Label for a checkbox in the options page"
@@ -322,10 +286,6 @@
   "strictblockTitle": {
     "message": "Tudalen wedi'i blocio",
     "description": "Web page title for the strict-blocked page"
-  },
-  "strictblockSentence1": {
-    "message": "Mae uBO Lite wedi atal y dudalen ganlynol rhag llwytho:",
-    "description": "Sentence used in the strict-blocked page"
   },
   "strictblockReasonSentence1": {
     "message": "Cafodd y dudalen ei rhwystro oherwydd hidl sy'n cyfateb yn {{listname}}.",
