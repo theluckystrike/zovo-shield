@@ -38,6 +38,7 @@ import {
 } from './ext.js';
 
 import { dom, qs$ } from './dom.js';
+import { faIconsInit } from './fa-icons.js';
 import { i18n$ } from './i18n.js';
 
 /******************************************************************************/
@@ -158,6 +159,9 @@ async function render() {
     for ( const pack of [ ...free, ...pro ] ) {
         host.append(packCard(pack, state));
     }
+    // Pack cards are created after the document-level icon pass ran, so
+    // substitute their .fa-icon glyphs explicitly.
+    faIconsInit(host);
 }
 
 /******************************************************************************/

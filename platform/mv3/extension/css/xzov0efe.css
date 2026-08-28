@@ -62,11 +62,15 @@
     gap: 2px;
     padding: var(--popup-gap-thin, 6px) var(--popup-gap-extra-thin, 3px);
 }
-:root:not(.isHTTP) #xzov0efe-scorecard {
-    display: none;
+#xzov0efe-scorecard[data-state="loading"] {
+    min-height: 44px;
 }
 #xzov0efe-scorecard[data-state="unavailable"] .xzov0efe-toptrackers {
     display: none;
+}
+#xzov0efe-scorecard[data-state="unavailable"] .xzov0efe-grade {
+    border: 1px solid var(--surface-3);
+    color: var(--ink-2);
 }
 
 .xzov0efe-score-main {
@@ -240,19 +244,50 @@ section[data-pane="zaplib"] .xzov0efe-pack .pack-actions {
     gap: 8px;
 }
 .xzov0efe-badge-pro {
-    background-color: var(--dashboard-highlight-surface, #e8ddfb);
-    border-radius: 6px;
-    color: var(--ink-1);
+    background-color: #f59e0b;
+    border-radius: 9999px;
+    color: #1c1005;
     font-size: 10px;
     font-weight: 700;
-    letter-spacing: 0.06em;
-    padding: 2px 6px;
+    letter-spacing: 0.05em;
+    padding: 2px 8px;
     text-transform: uppercase;
 }
 
+/* Popup extras menu: section label per DESIGN-SYSTEM (11px/600/uppercase/
+   tracked/muted), 44px row pitch, and a legible filtering-mode caption. */
+.toolMenu.xzTools > label {
+    color: var(--ink-2);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.toolMenu.xzTools > .tool {
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 44px;
+}
+.toolMenu.xzTools > .tool .xzov0efe-badge-pro {
+    align-self: center;
+    margin-inline-end: 6px;
+}
+#filteringModeText {
+    color: var(--ink-2);
+}
+
+/* Keep all seven dashboard tabs on one line at the options width: the
+   fork adds Zap library / Digest / Pro to the upstream five. */
+#dashboard-nav > .tabButton {
+    font-size: 92%;
+    padding: 0.7em 1em calc(0.7em - 3px);
+}
+
 /* Pro pane (dashboard) */
-section[data-pane="pro"] .xzov0efe-procard {
-    border: 1px solid var(--surface-2);
+section[data-pane="pro"] [hidden] {
+    display: none !important;
+}
+section[data-pane="pro"] .xzov0efe-procard {    border: 1px solid var(--surface-2);
     border-radius: 10px;
     margin: 8px 0;
     max-width: 40em;

@@ -73,6 +73,12 @@ function renderKpis(latest) {
 function renderSeries(latest) {
     const host = qs$('#xzov0efe-digest-series');
     dom.clear(host);
+    const total = latest.series.reduce((sum, day) => sum + day.blocked, 0);
+    if ( latest.series.length === 0 || total === 0 ) {
+        host.append(el('p', 'xzov0efe-note',
+            i18n$('xzDigestEmpty') || 'Nothing blocked in this window yet — browse a little and check back.'));
+        return;
+    }
     const max = Math.max(1, ...latest.series.map(a => a.blocked));
     for ( const day of latest.series ) {
         const row = el('div', 'xzov0efe-bar-row');
@@ -87,6 +93,15 @@ function renderSeries(latest) {
     }
 }
 
+const emptyTableRow = (table, cols) => {
+    const row = el('tr');
+    const cell = el('td', 'xzov0efe-note',
+        i18n$('xzDigestEmpty') || 'Nothing blocked in this window yet — browse a little and check back.');
+    cell.colSpan = cols;
+    row.append(cell);
+    table.append(row);
+};
+
 function renderTrackers(latest) {
     const table = qs$('#xzov0efe-digest-trackers');
     dom.clear(table);
@@ -94,6 +109,10 @@ function renderTrackers(latest) {
     head.append(el('th', undefined, i18n$('xzDigestColTracker') || 'Tracker domain'));
     head.append(el('th', 'numeric', i18n$('xzDigestColBlocked') || 'Blocked'));
     table.append(head);
+    if ( latest.topTrackers.length === 0 ) {
+        emptyTableRow(table, 2);
+        return;
+    }
     for ( const t of latest.topTrackers ) {
         const row = el('tr');
         row.append(el('td', undefined, t.domain));
@@ -111,6 +130,10 @@ function renderSites(latest) {
     head.append(el('th', 'numeric', i18n$('xzDigestColBlocked') || 'Blocked'));
     head.append(el('th', 'numeric', i18n$('xzDigestColDomains') || 'Tracker domains'));
     table.append(head);
+    if ( latest.topSites.length === 0 ) {
+        emptyTableRow(table, 4);
+        return;
+    }
     for ( const s of latest.topSites ) {
         const row = el('tr');
         row.append(el('td', undefined, s.hostname));

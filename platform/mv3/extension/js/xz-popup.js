@@ -89,9 +89,10 @@ function renderScoreCard(stats) {
 }
 
 async function initScoreCard(hostname) {
-    if ( hostname === '' ) {
-        dom.cl.remove(qs$('#xzov0efe-scorecard'), 'needHTTP');
-        qs$('#xzov0efe-scorecard').dataset.state = 'unavailable';
+    if ( typeof hostname !== 'string' || hostname === '' ) {
+        // Non-http page (or no tab access): show a friendly empty state
+        // rather than hiding the card outright.
+        renderScoreCard({ live: false });
         return;
     }
     const stats = await sendMessage({ what: 'zsSiteStats', hostname });
