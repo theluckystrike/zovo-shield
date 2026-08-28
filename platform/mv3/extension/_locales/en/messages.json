@@ -104,7 +104,7 @@
     "description": "Placeholder text which describes the purpose of the textarea widget"
   },
   "customListImportUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant Zovo Shield permission to run user scripts.",
+    "message": "To enforce cosmetic or scriptlet filters from imported lists, you must grant this extension permission to run user scripts.",
     "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
   },
   "customFiltersImportExportLabel": {
@@ -188,7 +188,7 @@
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option3": {
-    "message": "Detects Zovo Shield",
+    "message": "Detects this extension",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option4": {
@@ -196,7 +196,7 @@
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option5": {
-    "message": "Malfunctions when Zovo Shield is enabled",
+    "message": "Malfunctions when this extension is enabled",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -292,7 +292,7 @@
     "description": "Header for filter-creation section in the dashboard"
   },
   "sandboxEditorUserScriptsInfo": {
-    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant Zovo Shield permission to run user scripts.",
+    "message": "To enforce cosmetic or scriptlet filters from the sandbox, you must grant this extension permission to run user scripts.",
     "description": "A notice to inform user that the enforcement of some filters requires permission to execute 'user scripts'"
   },
   "developerModeLabel": {
@@ -475,13 +475,13 @@
     "message": "Off"
   },
   "xzToolsLabel": {
-    "message": "Zovo extras"
+    "message": "Extras"
   },
   "xzWeeklyDigest": {
     "message": "Weekly tracker digest"
   },
   "xzProCta": {
-    "message": "Zovo Shield Pro"
+    "message": "Pro"
   },
   "xzScoreTitle": {
     "message": "Privacy grade for this site"
@@ -502,7 +502,7 @@
     "message": "Weekly tracker digest"
   },
   "xzDigestSummary": {
-    "message": "A local-only recap of the tracker pressure Zovo Shield saw and blocked over the last 7 days. Nothing ever leaves your browser."
+    "message": "A local-only recap of the trackers seen and blocked over the last 7 days. Nothing ever leaves your browser."
   },
   "xzDigestDaily": {
     "message": "Blocked per day"
@@ -568,7 +568,7 @@
     "message": "Top tracker"
   },
   "xzDigestHistoryLocked": {
-    "message": "{{count}} more weeks of history with Zovo Shield Pro"
+    "message": "{{count}} more weeks of history with Pro"
   },
   "xzZapLibPageName": {
     "message": "Zap library"
@@ -622,7 +622,7 @@
     "message": "Imported {{count}} site rules"
   },
   "xzZapImportBad": {
-    "message": "That file is not a Zovo Shield zap-rules export."
+    "message": "That file is not a zap-rules export."
   },
   "xzZapLoadError": {
     "message": "Could not load the preset library."
@@ -631,7 +631,7 @@
     "message": "Pro"
   },
   "xzProHeading": {
-    "message": "Zovo Shield Pro"
+    "message": "Pro"
   },
   "xzProSummary": {
     "message": "The blocker is and stays free. A supporter key unlocks convenience extras and funds development."
@@ -646,7 +646,7 @@
     "message": "You support an independent, no-analytics privacy tool"
   },
   "xzProKeyPlaceholder": {
-    "message": "Paste your Zovo key"
+    "message": "Paste your supporter key"
   },
   "xzProApply": {
     "message": "Unlock"
@@ -679,13 +679,13 @@
     "message": "Verifying…"
   },
   "xzProMsgOk": {
-    "message": "Unlocked — thank you for supporting Zovo Shield!"
+    "message": "Unlocked — thank you for the support!"
   },
   "xzProMsgCleared": {
     "message": "Key removed from this browser"
   },
   "xzProMsgBadShape": {
-    "message": "That doesn’t look like a Zovo key (ZOVO-XXXX-XXXX-XXXX-XXXX)."
+    "message": "That doesn’t look like a supporter key — keys look like ZOVO-AB12-CD34-EF56-GH78."
   },
   "xzProMsgInvalid": {
     "message": "This key was not recognized. Check for typos and try again."

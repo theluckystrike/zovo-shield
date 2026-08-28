@@ -1,5 +1,4 @@
 /*
-    Zovo Shield - a comprehensive, MV3-compliant content blocker
     Copyright (C) 2026-present Zovo
 
     This file is part of Zovo Shield, a fork of uBlock Origin Lite
@@ -21,7 +20,7 @@
 
     ---
 
-    Styles for Zovo Shield popup extras (privacy score card, cookie-banner
+    Styles for the fork's popup extras (privacy score card, cookie-banner
     auto-decline toggle, digest + supporter links) and dashboard panes
     (digest, zap library, supporter). Theme variables come from the
     upstream default.css so light/dark themes keep working.
@@ -35,7 +34,7 @@
     --xzov0efe-grade-f: #cf222e;
 }
 
-/* Zovo identity: hue-110 green accent scale, replacing the upstream blue
+/* Brand identity: hue-110 green accent scale, replacing the upstream blue
    (h255) scale. Lightness steps mirror the upstream ramp so light/dark
    themes keep their contrast relationships. Brand stops: #52d039 (60),
    #76da62 (70), #9ae48b (80), #f1fbee (95). */
