@@ -44,7 +44,7 @@ import { i18n$ } from './i18n.js';
 /******************************************************************************/
 
 const APPLIED_KEY = 'xzov0efe.presets.applied';
-const PRO_URL = 'https://zovo.one/pricing?utm_source=zovo-shield&utm_medium=extension&utm_campaign=upgrade&utm_content=zaplib';
+const PRO_URL = 'https://zovo.one/pricing?utm_source=shield&utm_medium=extension&utm_campaign=upgrade&utm_content=zaplib';
 
 /******************************************************************************/
 
@@ -209,7 +209,7 @@ async function exportZapRules() {
     });
     const a = el('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'zovo-shield-zap-rules.json';
+    a.download = 'shield-zap-rules.json';
     a.click();
     self.setTimeout(( ) => URL.revokeObjectURL(a.href), 10 * 1000);
     statusLine(

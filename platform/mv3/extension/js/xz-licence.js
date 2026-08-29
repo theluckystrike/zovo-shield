@@ -56,7 +56,7 @@ import { ubolErr } from './debug.js';
 export const PRO_KEY_PATTERN = /^ZOVO-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/i;
 export const SUPABASE_ANON_KEY = 'sb_publishable_RG4IVO9Qm23_xPzdQjdFPQ_QHBwbOLv';
 export const LICENSE_VERIFY_URL = 'https://zgubxqomnbmxgbdhvwja.supabase.co/functions/v1/verify-extension-license';
-export const EXTENSION_KEY = 'zovo-shield';
+export const EXTENSION_KEY = 'shield';
 
 const CACHE_KEY = 'xzov0efe.license';
 const RL_KEY = 'xzov0efe.license.rl';
