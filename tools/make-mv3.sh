@@ -199,6 +199,12 @@ else
     rm -rf "$UBOL_DIR/rulesets/debug"
 fi
 
+# Zovo Shield: never ship rulesets/debug (49 MB of dev-only DNR debug copies,
+# unreferenced by manifest and code). Upstream already strips them from
+# tagged releases (above); our store package is built from the local path,
+# so strip unconditionally. The QA gate caps unpacked size at 50 MB.
+rm -rf "$UBOL_DIR/rulesets/debug"
+
 # Platform-specific steps
 if [ "$PLATFORM" = "edge" ]; then
     # For Edge, declared rulesets must be at package root
