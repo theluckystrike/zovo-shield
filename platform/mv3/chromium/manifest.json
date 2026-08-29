@@ -7,7 +7,8 @@
     },
     "default_popup": "popup.html"
   },
-  "author": "Raymond Hill",
+  "author": "Raymond Hill and contributors; Zovo Shield modifications by Zovo",
+  "homepage_url": "https://github.com/theluckystrike/zovo-shield",
   "background": {
       "service_worker": "/js/background.js",
       "type": "module"
